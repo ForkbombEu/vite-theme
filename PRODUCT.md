@@ -4,36 +4,62 @@
 
 ## Platform
 
-web
+Reusable web theme package and reference site.
 
 ## Stack
 
-Vite, selected by the user. The site deploys to GitHub Pages through GitHub Actions.
+Vite 8 for the plain-site fixture and GitHub Pages build; VitePress 1.6 with Vue
+for the documentation adapter and fixture. The package ships framework-light CSS,
+typed VitePress integration, and a defensive copy-based installer.
 
 ## Users
 
-Visitors reaching an early-stage project before its real content is ready.
+- Coding agents assembling consistent Vite or VitePress sites for other projects.
+- Maintainers who need a Forkbomb-branded starting point without inheriting a CMS.
+- Project teams that want tokens only, complete components, or a ready VitePress scaffold.
 
 ## Product Purpose
 
-Provide a polished landing stub that can later grow into the project website.
+Turn the visual language of Forkbomb's public site into a narrow, documented,
+reusable theme contract that works in plain Vite and extends VitePress's native
+theme behavior.
 
 ## Capabilities and Constraints
 
-- The initial surface contains placeholder content only.
-- Deployment must run through a GitHub Actions workflow for GitHub Pages.
-- The initial implementation should remain deliberately small.
+- Export complete CSS, tokens-only CSS, a small JavaScript manifest, and a
+  VitePress DefaultTheme extension.
+- Provide stable `fb-*` composition classes and semantic `--fb-*` custom properties.
+- Include a copy-based VitePress scaffold that preserves consumer files unless
+  `--force` is explicit.
+- Keep VitePress navigation, search, accessibility, and document behavior native.
+- Deploy the root Vite showcase through the existing GitHub Pages action.
+- Reproduce visual choices, not Forkbomb page copy, WordPress markup, or Elementor selectors.
 
 ## Brand Commitments
 
-The initial visual direction is inspired by forkbomb.eu: stark monochrome, typographic, compact, and developer-oriented without copying its content.
+The canonical source is Forkbomb's public site: navy `#050d30`, blue `#0f237c`,
+mint `#2dd8a3`, Barlow Semi Condensed display type, Public Sans body type, square
+geometry, thin rules, lateral shadows, and oversized forkbomb-expression watermarks.
+The theme must not drift into generic neon-dark UI, pill controls, glass panels,
+or monospace-as-brand styling.
+
+## Structural Method
+
+The scaffold methodology follows the accessible `dyne/dyne-vitepress` pattern:
+a small theme entry, replaceable starter content, and an installer that avoids
+overwriting existing files by default. No source-faithful `dyne/vite-theme`
+repository was available during implementation, so its contents were not inferred.
 
 ## Evidence on Hand
 
-No product claims, imagery, customer evidence, or final copy are available; future work must not fabricate them.
+The public Forkbomb desktop/mobile site and its delivered styles are the visual
+reference. The repository does not claim Forkbomb page content, customer proof,
+or product data; fixtures use clearly labeled example projects and factual theme copy.
 
 ## Product Principles
 
-- Make the placeholder feel intentional rather than unfinished.
-- Keep the scaffold easy to replace or extend.
-- Prefer direct typography and restrained interaction over decorative UI.
+- Make the visual contract explicit enough that an agent does not need to guess.
+- Prefer semantic tokens and native platform behavior over copied implementation detail.
+- Let consumers adopt tokens, components, or the full VitePress adapter independently.
+- Preserve project-owned files and make destructive replacement opt-in.
+- Verify both plain Vite and VitePress output at desktop and mobile widths.

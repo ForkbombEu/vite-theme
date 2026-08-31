@@ -1,0 +1,194 @@
+@import '../theme/index.css';
+
+:root {
+    --vp-font-family-base: var(--fb-font-body);
+    --vp-font-family-mono: var(--fb-font-mono);
+    --vp-c-bg: var(--fb-color-white);
+    --vp-c-bg-alt: var(--fb-color-cloud);
+    --vp-c-bg-elv: var(--fb-color-white);
+    --vp-c-bg-soft: var(--fb-color-cloud);
+    --vp-c-bg-mute: var(--fb-color-mist);
+    --vp-c-border: var(--fb-color-rule);
+    --vp-c-divider: var(--fb-color-rule);
+    --vp-c-gutter: rgba(15, 35, 124, 0.08);
+    --vp-c-text-1: var(--fb-color-navy);
+    --vp-c-text-2: var(--fb-color-text-muted);
+    --vp-c-text-3: rgba(5, 13, 48, 0.64);
+    --vp-c-brand-1: var(--fb-color-blue);
+    --vp-c-brand-2: var(--fb-color-navy);
+    --vp-c-brand-3: var(--fb-color-mint);
+    --vp-c-brand-soft: rgba(45, 216, 163, 0.16);
+    --vp-c-tip-1: var(--fb-color-blue);
+    --vp-c-tip-2: var(--fb-color-navy);
+    --vp-c-tip-3: var(--fb-color-mint);
+    --vp-c-tip-soft: rgba(45, 216, 163, 0.13);
+    --vp-nav-height: 76px;
+    --vp-nav-bg-color: var(--fb-color-blue);
+    --vp-sidebar-bg-color: var(--fb-color-cloud);
+    --vp-home-hero-name-color: var(--fb-color-white);
+    --vp-home-hero-name-background: none;
+    --vp-button-brand-border: var(--fb-color-mint);
+    --vp-button-brand-text: var(--fb-color-navy);
+    --vp-button-brand-bg: var(--fb-color-mint);
+    --vp-button-brand-hover-border: var(--fb-color-white);
+    --vp-button-brand-hover-text: var(--fb-color-white);
+    --vp-button-brand-hover-bg: transparent;
+    --vp-button-alt-border: var(--fb-color-white);
+    --vp-button-alt-text: var(--fb-color-white);
+    --vp-button-alt-bg: transparent;
+    --vp-button-alt-hover-border: var(--fb-color-mint);
+    --vp-button-alt-hover-text: var(--fb-color-navy);
+    --vp-button-alt-hover-bg: var(--fb-color-mint);
+  }
+
+  .dark {
+    --vp-c-bg: var(--fb-color-navy);
+    --vp-c-bg-alt: #081643;
+    --vp-c-bg-elv: var(--fb-color-blue);
+    --vp-c-bg-soft: #0a194e;
+    --vp-c-bg-mute: #0f237c;
+    --vp-c-border: rgba(255, 255, 255, 0.18);
+    --vp-c-divider: rgba(255, 255, 255, 0.18);
+    --vp-c-text-1: var(--fb-color-white);
+    --vp-c-text-2: rgba(255, 255, 255, 0.78);
+    --vp-c-text-3: rgba(255, 255, 255, 0.58);
+    --vp-c-brand-1: var(--fb-color-mint);
+    --vp-c-brand-2: var(--fb-color-white);
+    --vp-c-brand-3: var(--fb-color-mint);
+    --vp-sidebar-bg-color: var(--fb-color-navy);
+  }
+
+  .VPNav,
+  .VPNavBar,
+  .VPNavBar:not(.home.top) {
+    color: var(--fb-color-white);
+    background: var(--fb-color-blue);
+  }
+
+  .VPNavBar {
+    border-block-end: 1px solid var(--fb-color-rule-on-dark);
+  }
+
+  .VPNavBarTitle .title > span:not(.fb-vp-brand) {
+    overflow: hidden;
+    color: var(--fb-color-white);
+    font-family: var(--fb-font-display);
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .VPNavBarMenuLink,
+  .VPNavBarMenuGroup .button,
+  .VPNavBarTranslations .button,
+  .VPSocialLink,
+  .VPNavBarAppearance .text,
+  .VPNavBarHamburger .container {
+    color: var(--fb-color-white);
+  }
+
+  .VPNavBarMenuLink.link {
+    color: var(--fb-color-white);
+  }
+
+  .VPNavBarMenuLink:hover,
+  .VPNavBarMenuLink.active {
+    color: var(--fb-color-mint);
+  }
+
+  .VPHome {
+    padding-block-end: 0;
+  }
+
+  .VPHomeHero {
+    position: relative;
+    min-block-size: clamp(31rem, 72dvh, 47rem);
+    overflow: hidden;
+    color: var(--fb-color-white);
+    background:
+      radial-gradient(circle at 20% 30%, rgba(45, 216, 163, 0.13) 0 1px, transparent 2px),
+      linear-gradient(180deg, var(--fb-color-blue), var(--fb-color-navy));
+    background-size: 8rem 8rem, auto;
+  }
+
+  .VPHomeHero::before {
+    position: absolute;
+    inset-inline-start: 45%;
+    inset-block-start: 50%;
+    content: ':(){ :|:& };:';
+    color: rgba(255, 255, 255, 0.055);
+    font-family: var(--fb-font-display);
+    font-size: clamp(8rem, 20vw, 22rem);
+    font-weight: 600;
+    line-height: 0.7;
+    white-space: nowrap;
+    transform: translate(-22%, -50%);
+  }
+
+  .VPHomeHero .container { position: relative; z-index: 1; }
+  .VPHomeHero .name,
+  .VPHomeHero .text { color: var(--fb-color-white); font-family: var(--fb-font-display); }
+  .VPHomeHero .name .clip {
+    color: var(--fb-color-white);
+    background: none;
+    -webkit-text-fill-color: currentColor;
+  }
+  .VPHomeHero .tagline { color: rgba(255, 255, 255, 0.92); }
+
+  .VPHomeHero .VPButton.VPButton {
+    border-radius: 0;
+    font-family: var(--fb-font-body);
+    font-weight: 600;
+  }
+
+  .VPHomeFeatures { background: var(--fb-color-white); }
+
+  .VPFeature.VPFeature {
+    border: 0;
+    border-inline-start: 1px solid var(--fb-color-blue);
+    border-radius: 0;
+    background: var(--fb-color-white);
+    box-shadow: var(--fb-shadow-card);
+  }
+
+  .VPFeature.VPFeature .box {
+    border-radius: 0;
+  }
+
+  .VPFeature .title { color: var(--fb-color-blue); font-family: var(--fb-font-display); font-size: 1.25rem; }
+
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3 { font-family: var(--fb-font-display); }
+
+  .vp-doc h2 {
+    border-block-start: 0;
+  }
+
+  .vp-doc h2::after {
+    display: block;
+    inline-size: 3.5rem;
+    block-size: 2px;
+    margin-block-start: 0.7rem;
+    content: '';
+    background: var(--fb-color-mint);
+  }
+
+  .vp-doc a { text-decoration-color: var(--fb-color-mint); text-underline-offset: 0.2em; }
+  .vp-doc div[class*='language-'] { border-radius: 0; }
+
+  .custom-block {
+    border-inline-start-width: 2px;
+    border-radius: 0;
+  }
+
+  .fb-vp-brand { flex: none; margin-inline-end: 0.8rem; color: var(--fb-color-white); }
+  .fb-vp-footer { margin-block-start: var(--fb-space-section); }
+  .fb-vp-footer p { color: rgba(255, 255, 255, 0.84); }
+
+  @media (max-width: 47.99rem) {
+    .VPNavScreen { background: var(--fb-color-blue); }
+    .VPNavScreenMenuLink,
+    .VPNavScreenMenuGroup .button { color: var(--fb-color-white); }
+    .VPHomeHero::before { inset-inline-start: 18%; font-size: 10rem; }
+  }

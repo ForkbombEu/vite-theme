@@ -1,0 +1,29 @@
+@layer forkbomb.utilities {
+  .fb-container {
+    box-sizing: border-box;
+    inline-size: min(100%, var(--fb-container));
+    margin-inline: auto;
+    padding-inline: var(--fb-gutter);
+  }
+
+  .fb-stack { display: flex; flex-direction: column; gap: var(--fb-stack-gap, var(--fb-space-4)); }
+  .fb-cluster { display: flex; flex-wrap: wrap; align-items: center; gap: var(--fb-cluster-gap, var(--fb-space-3)); }
+
+  .fb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: var(--fb-grid-gap, var(--fb-space-5));
+  }
+
+  .fb-sr-only {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}

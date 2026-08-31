@@ -1,195 +1,614 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-31T08:34:32Z",
-  "title": "Design System: Project Placeholder",
+  "generatedAt": "2026-08-31T11:51:01Z",
+  "title": "Design System: Forkbomb Vite Theme",
   "extensions": {
     "colorMeta": {
-      "primary-ink": {
+      "deep-navy": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#050d30",
+        "tonalRamp": [
+          "oklch(15% 0.08 264)",
+          "oklch(26% 0.08 264)",
+          "oklch(38% 0.08 264)",
+          "oklch(50% 0.08 264)",
+          "oklch(62% 0.08 264)",
+          "oklch(74% 0.08 264)",
+          "oklch(86% 0.08 264)",
+          "oklch(95% 0.08 264)"
+        ]
+      },
+      "structural-blue": {
         "role": "primary",
-        "displayName": "Warm Signal Ink",
-        "canonical": "#f5f5f0",
+        "displayName": "Structural Blue",
+        "canonical": "#0f237c",
         "tonalRamp": [
-          "oklch(15% 0.004 100)",
-          "oklch(26% 0.004 100)",
-          "oklch(38% 0.004 100)",
-          "oklch(50% 0.004 100)",
-          "oklch(62% 0.004 100)",
-          "oklch(74% 0.004 100)",
-          "oklch(86% 0.004 100)",
-          "oklch(95% 0.004 100)"
+          "oklch(15% 0.16 264)",
+          "oklch(26% 0.16 264)",
+          "oklch(38% 0.16 264)",
+          "oklch(50% 0.16 264)",
+          "oklch(62% 0.16 264)",
+          "oklch(74% 0.16 264)",
+          "oklch(86% 0.16 264)",
+          "oklch(95% 0.16 264)"
         ]
       },
-      "signal-line": {
-        "role": "neutral",
-        "displayName": "Ghost Rule",
-        "canonical": "rgba(245, 245, 240, 0.28)",
+      "signal-mint": {
+        "role": "primary",
+        "displayName": "Signal Mint",
+        "canonical": "#2dd8a3",
         "tonalRamp": [
-          "oklch(15% 0.004 100 / 0.28)",
-          "oklch(26% 0.004 100 / 0.28)",
-          "oklch(38% 0.004 100 / 0.28)",
-          "oklch(50% 0.004 100 / 0.28)",
-          "oklch(62% 0.004 100 / 0.28)",
-          "oklch(74% 0.004 100 / 0.28)",
-          "oklch(86% 0.004 100 / 0.28)",
-          "oklch(95% 0.004 100 / 0.28)"
+          "oklch(15% 0.16 163)",
+          "oklch(26% 0.16 163)",
+          "oklch(38% 0.16 163)",
+          "oklch(50% 0.16 163)",
+          "oklch(62% 0.16 163)",
+          "oklch(74% 0.16 163)",
+          "oklch(86% 0.16 163)",
+          "oklch(95% 0.16 163)"
         ]
       },
-      "terminal-ground": {
+      "reading-white": {
         "role": "neutral",
-        "displayName": "Terminal Ground",
-        "canonical": "#050505",
+        "displayName": "Reading White",
+        "canonical": "#ffffff",
         "tonalRamp": [
-          "oklch(15% 0 0)",
-          "oklch(26% 0 0)",
-          "oklch(38% 0 0)",
-          "oklch(50% 0 0)",
-          "oklch(62% 0 0)",
-          "oklch(74% 0 0)",
-          "oklch(86% 0 0)",
-          "oklch(95% 0 0)"
+          "oklch(15% 0 250)",
+          "oklch(26% 0 250)",
+          "oklch(38% 0 250)",
+          "oklch(50% 0 250)",
+          "oklch(62% 0 250)",
+          "oklch(74% 0 250)",
+          "oklch(86% 0 250)",
+          "oklch(95% 0 250)"
+        ]
+      },
+      "alternate-cloud": {
+        "role": "neutral",
+        "displayName": "Alternate Cloud",
+        "canonical": "#f7f7f7",
+        "tonalRamp": [
+          "oklch(15% 0.004 250)",
+          "oklch(26% 0.004 250)",
+          "oklch(38% 0.004 250)",
+          "oklch(50% 0.004 250)",
+          "oklch(62% 0.004 250)",
+          "oklch(74% 0.004 250)",
+          "oklch(86% 0.004 250)",
+          "oklch(95% 0.004 250)"
+        ]
+      },
+      "interface-mist": {
+        "role": "neutral",
+        "displayName": "Interface Mist",
+        "canonical": "#eef1f5",
+        "tonalRamp": [
+          "oklch(15% 0.01 250)",
+          "oklch(26% 0.01 250)",
+          "oklch(38% 0.01 250)",
+          "oklch(50% 0.01 250)",
+          "oklch(62% 0.01 250)",
+          "oklch(74% 0.01 250)",
+          "oklch(86% 0.01 250)",
+          "oklch(95% 0.01 250)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#3f4b70",
+        "tonalRamp": [
+          "oklch(15% 0.05 264)",
+          "oklch(26% 0.05 264)",
+          "oklch(38% 0.05 264)",
+          "oklch(50% 0.05 264)",
+          "oklch(62% 0.05 264)",
+          "oklch(74% 0.05 264)",
+          "oklch(86% 0.05 264)",
+          "oklch(95% 0.05 264)"
+        ]
+      },
+      "invalid-red": {
+        "role": "secondary",
+        "displayName": "Invalid Red",
+        "canonical": "#ad1f3d",
+        "tonalRamp": [
+          "oklch(15% 0.17 15)",
+          "oklch(26% 0.17 15)",
+          "oklch(38% 0.17 15)",
+          "oklch(50% 0.17 15)",
+          "oklch(62% 0.17 15)",
+          "oklch(74% 0.17 15)",
+          "oklch(86% 0.17 15)",
+          "oklch(95% 0.17 15)"
+        ]
+      },
+      "dark-alt": {
+        "role": "neutral",
+        "displayName": "Dark Alt",
+        "canonical": "#081643",
+        "tonalRamp": [
+          "oklch(15% 0.1 264)",
+          "oklch(26% 0.1 264)",
+          "oklch(38% 0.1 264)",
+          "oklch(50% 0.1 264)",
+          "oklch(62% 0.1 264)",
+          "oklch(74% 0.1 264)",
+          "oklch(86% 0.1 264)",
+          "oklch(95% 0.1 264)"
+        ]
+      },
+      "dark-soft": {
+        "role": "neutral",
+        "displayName": "Dark Soft",
+        "canonical": "#0a194e",
+        "tonalRamp": [
+          "oklch(15% 0.11 264)",
+          "oklch(26% 0.11 264)",
+          "oklch(38% 0.11 264)",
+          "oklch(50% 0.11 264)",
+          "oklch(62% 0.11 264)",
+          "oklch(74% 0.11 264)",
+          "oklch(86% 0.11 264)",
+          "oklch(95% 0.11 264)"
+        ]
+      },
+      "rule-blue": {
+        "role": "neutral",
+        "displayName": "Blue Rule",
+        "canonical": "rgba(15, 35, 124, 0.22)",
+        "tonalRamp": [
+          "oklch(15% 0.16 264 / 0.22)",
+          "oklch(26% 0.16 264 / 0.22)",
+          "oklch(38% 0.16 264 / 0.22)",
+          "oklch(50% 0.16 264 / 0.22)",
+          "oklch(62% 0.16 264 / 0.22)",
+          "oklch(74% 0.16 264 / 0.22)",
+          "oklch(86% 0.16 264 / 0.22)",
+          "oklch(95% 0.16 264 / 0.22)"
+        ]
+      },
+      "rule-blue-soft": {
+        "role": "neutral",
+        "displayName": "Soft Blue Rule",
+        "canonical": "rgba(15, 35, 124, 0.08)",
+        "tonalRamp": [
+          "oklch(15% 0.16 264 / 0.08)",
+          "oklch(26% 0.16 264 / 0.08)",
+          "oklch(38% 0.16 264 / 0.08)",
+          "oklch(50% 0.16 264 / 0.08)",
+          "oklch(62% 0.16 264 / 0.08)",
+          "oklch(74% 0.16 264 / 0.08)",
+          "oklch(86% 0.16 264 / 0.08)",
+          "oklch(95% 0.16 264 / 0.08)"
+        ]
+      },
+      "rule-mint-dark": {
+        "role": "primary",
+        "displayName": "Mint-on-Dark Rule",
+        "canonical": "rgba(45, 216, 163, 0.6)",
+        "tonalRamp": [
+          "oklch(15% 0.16 163 / 0.6)",
+          "oklch(26% 0.16 163 / 0.6)",
+          "oklch(38% 0.16 163 / 0.6)",
+          "oklch(50% 0.16 163 / 0.6)",
+          "oklch(62% 0.16 163 / 0.6)",
+          "oklch(74% 0.16 163 / 0.6)",
+          "oklch(86% 0.16 163 / 0.6)",
+          "oklch(95% 0.16 163 / 0.6)"
+        ]
+      },
+      "mint-soft": {
+        "role": "primary",
+        "displayName": "Mint Soft",
+        "canonical": "rgba(45, 216, 163, 0.16)",
+        "tonalRamp": [
+          "oklch(15% 0.16 163 / 0.16)",
+          "oklch(26% 0.16 163 / 0.16)",
+          "oklch(38% 0.16 163 / 0.16)",
+          "oklch(50% 0.16 163 / 0.16)",
+          "oklch(62% 0.16 163 / 0.16)",
+          "oklch(74% 0.16 163 / 0.16)",
+          "oklch(86% 0.16 163 / 0.16)",
+          "oklch(95% 0.16 163 / 0.16)"
+        ]
+      },
+      "mint-dust": {
+        "role": "primary",
+        "displayName": "Mint Dust",
+        "canonical": "rgba(45, 216, 163, 0.13)",
+        "tonalRamp": [
+          "oklch(15% 0.16 163 / 0.13)",
+          "oklch(26% 0.16 163 / 0.13)",
+          "oklch(38% 0.16 163 / 0.13)",
+          "oklch(50% 0.16 163 / 0.13)",
+          "oklch(62% 0.16 163 / 0.13)",
+          "oklch(74% 0.16 163 / 0.13)",
+          "oklch(86% 0.16 163 / 0.13)",
+          "oklch(95% 0.16 163 / 0.13)"
+        ]
+      },
+      "navy-muted": {
+        "role": "neutral",
+        "displayName": "Navy Muted",
+        "canonical": "rgba(5, 13, 48, 0.64)",
+        "tonalRamp": [
+          "oklch(15% 0.08 264 / 0.64)",
+          "oklch(26% 0.08 264 / 0.64)",
+          "oklch(38% 0.08 264 / 0.64)",
+          "oklch(50% 0.08 264 / 0.64)",
+          "oklch(62% 0.08 264 / 0.64)",
+          "oklch(74% 0.08 264 / 0.64)",
+          "oklch(86% 0.08 264 / 0.64)",
+          "oklch(95% 0.08 264 / 0.64)"
+        ]
+      },
+      "white-strong": {
+        "role": "neutral",
+        "displayName": "White Strong",
+        "canonical": "rgba(255, 255, 255, 0.92)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.92)",
+          "oklch(26% 0 250 / 0.92)",
+          "oklch(38% 0 250 / 0.92)",
+          "oklch(50% 0 250 / 0.92)",
+          "oklch(62% 0 250 / 0.92)",
+          "oklch(74% 0 250 / 0.92)",
+          "oklch(86% 0 250 / 0.92)",
+          "oklch(95% 0 250 / 0.92)"
+        ]
+      },
+      "white-mid": {
+        "role": "neutral",
+        "displayName": "White Mid",
+        "canonical": "rgba(255, 255, 255, 0.78)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.78)",
+          "oklch(26% 0 250 / 0.78)",
+          "oklch(38% 0 250 / 0.78)",
+          "oklch(50% 0 250 / 0.78)",
+          "oklch(62% 0 250 / 0.78)",
+          "oklch(74% 0 250 / 0.78)",
+          "oklch(86% 0 250 / 0.78)",
+          "oklch(95% 0 250 / 0.78)"
+        ]
+      },
+      "white-soft": {
+        "role": "neutral",
+        "displayName": "White Soft",
+        "canonical": "rgba(255, 255, 255, 0.58)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.58)",
+          "oklch(26% 0 250 / 0.58)",
+          "oklch(38% 0 250 / 0.58)",
+          "oklch(50% 0 250 / 0.58)",
+          "oklch(62% 0 250 / 0.58)",
+          "oklch(74% 0 250 / 0.58)",
+          "oklch(86% 0 250 / 0.58)",
+          "oklch(95% 0 250 / 0.58)"
+        ]
+      },
+      "white-footer": {
+        "role": "neutral",
+        "displayName": "White Footer",
+        "canonical": "rgba(255, 255, 255, 0.84)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.84)",
+          "oklch(26% 0 250 / 0.84)",
+          "oklch(38% 0 250 / 0.84)",
+          "oklch(50% 0 250 / 0.84)",
+          "oklch(62% 0 250 / 0.84)",
+          "oklch(74% 0 250 / 0.84)",
+          "oklch(86% 0 250 / 0.84)",
+          "oklch(95% 0 250 / 0.84)"
+        ]
+      },
+      "white-particle": {
+        "role": "neutral",
+        "displayName": "White Particle",
+        "canonical": "rgba(255, 255, 255, 0.13)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.13)",
+          "oklch(26% 0 250 / 0.13)",
+          "oklch(38% 0 250 / 0.13)",
+          "oklch(50% 0 250 / 0.13)",
+          "oklch(62% 0 250 / 0.13)",
+          "oklch(74% 0 250 / 0.13)",
+          "oklch(86% 0 250 / 0.13)",
+          "oklch(95% 0 250 / 0.13)"
+        ]
+      },
+      "white-border": {
+        "role": "neutral",
+        "displayName": "White Border",
+        "canonical": "rgba(255, 255, 255, 0.18)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.18)",
+          "oklch(26% 0 250 / 0.18)",
+          "oklch(38% 0 250 / 0.18)",
+          "oklch(50% 0 250 / 0.18)",
+          "oklch(62% 0 250 / 0.18)",
+          "oklch(74% 0 250 / 0.18)",
+          "oklch(86% 0 250 / 0.18)",
+          "oklch(95% 0 250 / 0.18)"
+        ]
+      },
+      "white-rule": {
+        "role": "neutral",
+        "displayName": "White Rule",
+        "canonical": "rgba(255, 255, 255, 0.15)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.15)",
+          "oklch(26% 0 250 / 0.15)",
+          "oklch(38% 0 250 / 0.15)",
+          "oklch(50% 0 250 / 0.15)",
+          "oklch(62% 0 250 / 0.15)",
+          "oklch(74% 0 250 / 0.15)",
+          "oklch(86% 0 250 / 0.15)",
+          "oklch(95% 0 250 / 0.15)"
+        ]
+      },
+      "expression-pale": {
+        "role": "neutral",
+        "displayName": "Expression Pale",
+        "canonical": "rgba(255, 255, 255, 0.055)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.055)",
+          "oklch(26% 0 250 / 0.055)",
+          "oklch(38% 0 250 / 0.055)",
+          "oklch(50% 0 250 / 0.055)",
+          "oklch(62% 0 250 / 0.055)",
+          "oklch(74% 0 250 / 0.055)",
+          "oklch(86% 0 250 / 0.055)",
+          "oklch(95% 0 250 / 0.055)"
+        ]
+      },
+      "expression-footer": {
+        "role": "neutral",
+        "displayName": "Expression Footer",
+        "canonical": "rgba(255, 255, 255, 0.045)",
+        "tonalRamp": [
+          "oklch(15% 0 250 / 0.045)",
+          "oklch(26% 0 250 / 0.045)",
+          "oklch(38% 0 250 / 0.045)",
+          "oklch(50% 0 250 / 0.045)",
+          "oklch(62% 0 250 / 0.045)",
+          "oklch(74% 0 250 / 0.045)",
+          "oklch(86% 0 250 / 0.045)",
+          "oklch(95% 0 250 / 0.045)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Display Word",
-        "purpose": "The singular oversized project-state word."
+        "displayName": "Display",
+        "purpose": "Hero statements and the largest balanced technical headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section and documentation landmarks."
       },
       "body": {
-        "displayName": "Status Copy",
-        "purpose": "Short index and provisional explanatory notes."
+        "displayName": "Body",
+        "purpose": "Sustained product and documentation reading."
       },
-      "metadata": {
-        "displayName": "Machine Metadata",
-        "purpose": "Edge-pinned project, status, and time labels."
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Short explanatory copy in heroes and section introductions."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, actions, and compact controls."
+      },
+      "mono": {
+        "displayName": "Code and Expression",
+        "purpose": "Literal code, token values, and the forkbomb signature only."
       }
     },
-    "shadows": [],
+    "shadows": [
+      {
+        "name": "lateral-card",
+        "value": "5rem 0 4.375rem -1.25rem rgba(0, 0, 0, 0.14)",
+        "purpose": "Directional depth for white cards, open details, and VitePress feature panels."
+      }
+    ],
     "motion": [
       {
-        "name": "signal-scan",
-        "value": "7s cubic-bezier(0.16, 1, 0.3, 1) infinite",
-        "purpose": "Moves the single scan line across the viewport, staying quiet for most of the cycle."
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Decisive easing for the slow technical signal."
       },
       {
-        "name": "signal-reduced-motion",
-        "value": "none; opacity: 0.35",
-        "purpose": "Stops scanning and leaves a subdued static rule when reduced motion is requested."
+        "name": "duration-fast",
+        "value": "160ms",
+        "purpose": "Navigation and control state transitions."
+      },
+      {
+        "name": "duration-slow",
+        "value": "900ms",
+        "purpose": "Reserved slow transition token."
+      },
+      {
+        "name": "hero-signal",
+        "value": "5s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate",
+        "purpose": "The one slow mint pulse; disabled under reduced motion."
       }
     ],
     "breakpoints": [
       {
-        "name": "compact",
-        "value": "36rem"
+        "name": "footer-compact",
+        "value": "30rem"
+      },
+      {
+        "name": "section-container",
+        "value": "42rem"
+      },
+      {
+        "name": "mobile",
+        "value": "48rem"
+      },
+      {
+        "name": "vitepress-mobile",
+        "value": "47.99rem"
       }
     ]
   },
   "components": [
     {
-      "name": "Metadata Bar",
+      "name": "Forkbomb Brand",
+      "kind": "custom",
+      "description": "A two-line uppercase name with the mint monospace expression signature.",
+      "html": "<a class=\"ds-brand\" href=\"#\"><span class=\"ds-brand-name\">Forkbomb</span><span class=\"ds-brand-expression\" aria-hidden=\"true\">:(){ :|:&amp; };:</span></a>",
+      "css": ".ds-brand { display: inline-flex; flex-direction: column; align-items: flex-start; color: inherit; font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); line-height: 0.8; text-decoration: none; text-transform: uppercase; } .ds-brand-name { font-size: clamp(1.1rem, 0.95rem + 0.55vw, 1.55rem); font-weight: 700; letter-spacing: 0.06em; } .ds-brand-expression { margin-block-start: 0.35rem; color: var(--fb-color-mint, #2dd8a3); font-family: var(--fb-font-mono, ui-monospace, SFMono-Regular, Consolas, monospace); font-size: 0.55em; font-weight: 600; letter-spacing: 0.18em; } .ds-brand:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; }"
+    },
+    {
+      "name": "Navigation",
       "kind": "nav",
-      "refersTo": "metadata-bar",
-      "description": "An edge-pinned row for compact project and status facts.",
-      "html": "<div class=\"ds-metadata-bar\"><span>PROJECT / 000</span><span>STATUS: TEMPORARY</span></div>",
-      "css": ".ds-metadata-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 0 1.1rem; color: var(--ink, #f5f5f0); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; font-size: clamp(0.68rem, 0.6rem + 0.25vw, 0.85rem); line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 1px solid var(--line, rgba(245, 245, 240, 0.28)); }"
+      "refersTo": "navigation",
+      "description": "The royal-blue brand bar with a mint boundary and state underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a class=\"ds-brand-link\" href=\"#\">Forkbomb</a><div class=\"ds-nav-links\"><a aria-current=\"page\" href=\"#\">Method</a><a href=\"#\">Install</a></div></nav>",
+      "css": ".ds-nav { display: flex; min-block-size: 4.75rem; align-items: center; justify-content: space-between; gap: 1.5rem; padding-inline: clamp(1.25rem, 5vw, 4.5rem); color: var(--fb-color-white, #fff); background: var(--fb-color-blue, #0f237c); border-block-end: 1px solid var(--fb-color-rule-on-dark, rgba(45,216,163,.6)); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-weight: 600; } .ds-brand-link, .ds-nav-links a { position: relative; color: inherit; text-decoration: none; } .ds-nav-links { display: flex; gap: clamp(1rem, 2.5vw, 2.25rem); } .ds-nav-links a::after { position: absolute; inset-inline: 0; inset-block-end: -0.55rem; block-size: 2px; content: \"\"; background: var(--fb-color-mint, #2dd8a3); transform: scaleX(0); transform-origin: left; transition: transform 160ms ease-out; } .ds-nav-links a:hover::after, .ds-nav-links a[aria-current=\"page\"]::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; } @media (max-width: 48rem) { .ds-nav-links { display: none; } } @media (prefers-reduced-motion: reduce) { .ds-nav-links a::after { transition: none; } }"
     },
     {
-      "name": "Status Indicator",
+      "name": "Technical Hero",
       "kind": "custom",
-      "refersTo": "status-light",
-      "description": "A hard-square live mark paired with a compact uppercase status.",
-      "html": "<span class=\"ds-status\"><span class=\"ds-status-light\" aria-hidden=\"true\"></span>IN PROGRESS</span>",
-      "css": ".ds-status { display: inline-flex; align-items: center; gap: 0.65rem; color: var(--ink, #f5f5f0); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; font-size: clamp(0.68rem, 0.6rem + 0.25vw, 0.85rem); line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; } .ds-status-light { inline-size: 0.55rem; block-size: 0.55rem; background: currentColor; }"
+      "description": "The layered blue-to-navy identity field with expression watermark and one mint pulse.",
+      "html": "<section class=\"ds-hero\"><div class=\"ds-hero-content\"><h1>Technical infrastructure, clearly expressed</h1><p>One reusable visual system for product pages and documentation.</p></div></section>",
+      "css": ".ds-hero { position: relative; display: grid; min-block-size: clamp(31rem, 72dvh, 47rem); align-items: center; overflow: hidden; isolation: isolate; padding: clamp(1.25rem, 5vw, 4.5rem); color: var(--fb-color-white, #fff); background: radial-gradient(circle at 15% 22%, rgba(45,216,163,.13) 0 1px, transparent 2px), radial-gradient(circle at 73% 38%, rgba(255,255,255,.13) 0 1px, transparent 2px), linear-gradient(180deg, var(--fb-color-blue, #0f237c), var(--fb-color-navy, #050d30)); background-size: 7rem 7rem, 10rem 10rem, auto; } .ds-hero::before { position: absolute; inset-inline-start: 45%; inset-block-start: 42%; z-index: -1; content: \":(){ :|:& };:\"; color: rgba(255,255,255,.055); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(8rem, 20vw, 22rem); font-weight: 600; line-height: .7; white-space: nowrap; transform: translate(-22%,-50%); } .ds-hero::after { position: absolute; inset-inline-start: 50%; inset-block: 19% 13%; z-index: -1; inline-size: 1px; content: \"\"; background: linear-gradient(transparent, var(--fb-color-mint, #2dd8a3), transparent); animation: ds-pulse 5s cubic-bezier(.16,1,.3,1) infinite alternate; } .ds-hero-content { position: relative; z-index: 1; max-inline-size: 45rem; } .ds-hero h1 { max-inline-size: 15ch; margin: 0 0 1.5rem; font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(2.75rem,1.7rem + 4.2vw,5.75rem); font-weight: 600; line-height: .98; letter-spacing: -.03em; } .ds-hero p { max-inline-size: 52ch; font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); font-size: clamp(1.1rem,1rem + .45vw,1.3rem); line-height: 1.55; } @keyframes ds-pulse { from { clip-path: inset(0 0 72%); opacity: .35; } to { clip-path: inset(0); opacity: .85; } } @media (max-width: 48rem) { .ds-hero { min-block-size: 34rem; } .ds-hero::before { inset-inline-start: 20%; font-size: 11rem; } } @media (prefers-reduced-motion: reduce) { .ds-hero::after { animation: none; clip-path: none; opacity: .55; } } @media (forced-colors: active) { .ds-hero { border: 1px solid CanvasText; } .ds-hero::before { display: none; } }"
     },
     {
-      "name": "Display Message",
-      "kind": "custom",
-      "refersTo": "display-word",
-      "description": "The oversized unboxed placeholder word with an honest compact note.",
-      "html": "<section class=\"ds-message\"><p class=\"ds-message-index\">[ 00—00—00 ]</p><h1>PLACEHOLDER</h1><p class=\"ds-message-note\">SOMETHING IS TAKING SHAPE HERE.</p></section>",
-      "css": ".ds-message { color: var(--ink, #f5f5f0); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; } .ds-message h1 { max-inline-size: 100%; margin: clamp(1.25rem, 3vw, 2.5rem) 0 clamp(1rem, 2vw, 1.75rem); font-size: clamp(3.1rem, 13.7vw, 12rem); font-weight: 700; line-height: 0.76; letter-spacing: -0.04em; text-transform: uppercase; overflow-wrap: anywhere; } .ds-message-index, .ds-message-note { margin: 0; font-size: clamp(0.72rem, 0.63rem + 0.35vw, 1rem); line-height: 1.4; letter-spacing: 0.02em; text-transform: uppercase; } .ds-message-note { max-inline-size: 34ch; } @media (max-width: 36rem) { .ds-message h1 { font-size: clamp(3.2rem, 20vw, 6rem); line-height: 0.84; } }"
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "The mint primary action with a trailing condensed chevron.",
+      "html": "<button class=\"ds-button ds-button-solid\">Start using it</button>",
+      "css": ".ds-button { box-sizing: border-box; display: inline-flex; min-block-size: 2.75rem; align-items: center; justify-content: center; gap: .6rem; padding: .75rem 2rem; border: 1px solid currentColor; border-radius: 0; font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); font-size: .875rem; font-weight: 600; line-height: 1.2; cursor: pointer; transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; } .ds-button::after { content: \"›\"; font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: 1.25em; line-height: 0; } .ds-button-solid { color: var(--fb-color-navy, #050d30); background: var(--fb-color-mint, #2dd8a3); border-color: var(--fb-color-mint, #2dd8a3); } .ds-button-solid:hover { color: var(--fb-color-white, #fff); background: var(--fb-color-blue, #0f237c); border-color: var(--fb-color-blue, #0f237c); } .ds-button:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; } .ds-button:disabled, .ds-button[aria-disabled=\"true\"] { opacity: .45; cursor: not-allowed; }"
     },
     {
-      "name": "Data Field",
-      "kind": "custom",
-      "description": "A square full-width field with barcode texture and inset hairline boundaries.",
-      "html": "<div class=\"ds-data-field\"><span>PROJECT / 000</span><strong>PLACEHOLDER</strong><span>STATUS: TEMPORARY</span></div>",
-      "css": ".ds-data-field { position: relative; isolation: isolate; display: grid; min-block-size: 18rem; padding: clamp(1rem, 2.4vw, 2.5rem); overflow: hidden; color: var(--ink, #f5f5f0); background: var(--ground, #050505); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; text-transform: uppercase; border-block: 1px solid var(--line, rgba(245, 245, 240, 0.28)); } .ds-data-field::before { position: absolute; inset: 0; z-index: -1; content: \"\"; opacity: 0.22; background-image: repeating-linear-gradient(90deg, transparent 0, transparent 0.42rem, var(--ink, #f5f5f0) 0.42rem, var(--ink, #f5f5f0) 0.48rem, transparent 0.48rem, transparent 1.3rem); mask-image: linear-gradient(to bottom, #000 0 12%, transparent 36% 68%, #000 92%); } .ds-data-field strong { align-self: center; font-size: clamp(2.5rem, 10vw, 7rem); line-height: 0.8; letter-spacing: -0.04em; overflow-wrap: anywhere; } .ds-data-field span:last-child { align-self: end; justify-self: end; }"
+      "name": "Outline Button on Dark",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The mint outline action for navy and blue fields.",
+      "html": "<button class=\"ds-button-dark\">Read the visual contract</button>",
+      "css": ".ds-button-dark { box-sizing: border-box; display: inline-flex; min-block-size: 2.75rem; align-items: center; justify-content: center; gap: .6rem; padding: .75rem 2rem; color: var(--fb-color-mint, #2dd8a3); background: transparent; border: 1px solid currentColor; border-radius: 0; font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); font-size: .875rem; font-weight: 600; line-height: 1.2; cursor: pointer; transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; } .ds-button-dark::after { content: \"›\"; font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: 1.25em; line-height: 0; } .ds-button-dark:hover { color: var(--fb-color-navy, #050d30); background: var(--fb-color-mint, #2dd8a3); border-color: var(--fb-color-mint, #2dd8a3); } .ds-button-dark:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; }"
     },
     {
-      "name": "Scan Signal",
+      "name": "Lateral Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Square white reading content with a mint rail and source-faithful horizontal depth.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-card-rule\" aria-hidden=\"true\"></span><h3>Reusable pattern</h3><p>Semantic tokens and stable classes keep the visual system portable.</p></article>",
+      "css": ".ds-card { position: relative; padding: clamp(1.5rem,4vw,2.75rem); color: var(--fb-color-navy, #050d30); background: var(--fb-color-white, #fff); box-shadow: var(--fb-shadow-card, 5rem 0 4.375rem -1.25rem rgba(0,0,0,.14)); font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); line-height: 1.55; } .ds-card-rule { display: block; inline-size: 1px; block-size: 4rem; margin-block-end: 1.5rem; background: var(--fb-color-mint, #2dd8a3); } .ds-card h3 { margin-block-start: 0; color: var(--fb-color-blue, #0f237c); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(1.3rem,1.1rem + .7vw,1.8rem); font-weight: 600; line-height: 1.08; } @media (forced-colors: active) { .ds-card { border: 1px solid CanvasText; box-shadow: none; } }"
+    },
+    {
+      "name": "Native Accordion",
       "kind": "custom",
-      "refersTo": "scan-line",
-      "description": "The sole motion signature: a one-pixel line crossing a dark field.",
-      "html": "<div class=\"ds-scan-field\" aria-hidden=\"true\"><span class=\"ds-scan-line\"></span></div>",
-      "css": ".ds-scan-field { position: relative; min-block-size: 12rem; overflow: hidden; background: var(--ground, #050505); border-block: 1px solid var(--line, rgba(245, 245, 240, 0.28)); } .ds-scan-line { position: absolute; inset-inline: 0; inset-block-start: 50%; block-size: 1px; background: var(--ink, #f5f5f0); animation: ds-signal-scan 7s cubic-bezier(0.16, 1, 0.3, 1) infinite; } @keyframes ds-signal-scan { 0%, 82%, 100% { transform: translateY(-5rem); opacity: 0.18; } 92% { transform: translateY(5rem); opacity: 1; } } @media (prefers-reduced-motion: reduce) { .ds-scan-line { animation: none; opacity: 0.35; } }"
+      "description": "A semantic details panel that signals the open state with mint and lateral depth.",
+      "html": "<div class=\"ds-accordion\"><details open><summary>Semantic design tokens</summary><div class=\"ds-accordion-body\">Colors, type, spacing, shadow, and motion use stable names.</div></details><details><summary>VitePress extension</summary><div class=\"ds-accordion-body\">Default behavior remains intact.</div></details></div>",
+      "css": ".ds-accordion { color: var(--fb-color-navy, #050d30); background: var(--fb-color-white, #fff); font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); } .ds-accordion details { border-inline-start: 1px solid var(--fb-color-blue, #0f237c); border-block-end: 1px solid rgba(15,35,124,.08); } .ds-accordion details[open] { border-inline-start-color: var(--fb-color-mint, #2dd8a3); box-shadow: var(--fb-shadow-card, 5rem 0 4.375rem -1.25rem rgba(0,0,0,.14)); } .ds-accordion summary { display: grid; min-block-size: 4rem; grid-template-columns: 1rem 1fr; gap: 1rem; align-items: center; padding: 1rem 1.5rem; color: var(--fb-color-blue, #0f237c); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-weight: 600; cursor: pointer; list-style: none; } .ds-accordion summary::-webkit-details-marker { display: none; } .ds-accordion summary::before { content: \"+\"; } .ds-accordion details[open] summary, .ds-accordion details[open] summary::before { color: var(--fb-color-mint, #2dd8a3); } .ds-accordion details[open] summary::before { content: \"−\"; } .ds-accordion summary:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; } .ds-accordion-body { padding: 0 2rem 2rem 3.5rem; line-height: 1.55; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "A square white field with blue structure, mint focus, and dedicated invalid red.",
+      "html": "<label class=\"ds-field-label\">Project name<input class=\"ds-field\" placeholder=\"Cipherdocs\" required value=\"\"></label>",
+      "css": ".ds-field-label { display: grid; gap: .5rem; color: var(--fb-color-navy, #050d30); font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); font-size: .875rem; font-weight: 600; } .ds-field { box-sizing: border-box; inline-size: 100%; min-block-size: 2.75rem; padding: .65rem .8rem; color: var(--fb-color-navy, #050d30); background: var(--fb-color-white, #fff); border: 1px solid var(--fb-color-blue, #0f237c); border-radius: 0; font: inherit; } .ds-field::placeholder { color: color-mix(in srgb, var(--fb-color-blue, #0f237c) 55%, white); } .ds-field:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; } .ds-field:user-invalid { border-color: #ad1f3d; }"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "description": "A condensed section title terminated by a short mint rule.",
+      "html": "<h2 class=\"ds-section-title\">One visual vocabulary</h2>",
+      "css": ".ds-section-title { margin-block-start: 0; color: var(--fb-color-blue, #0f237c); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(2rem,1.55rem + 1.6vw,2.5rem); font-weight: 600; line-height: 1.08; text-wrap: balance; } .ds-section-title::after { display: block; inline-size: 3.5rem; block-size: 2px; margin-block-start: .8rem; content: \"\"; background: var(--fb-color-mint, #2dd8a3); }"
+    },
+    {
+      "name": "Expression Footer",
+      "kind": "custom",
+      "description": "The royal-blue multi-column closing field with a pale expression beneath legal content.",
+      "html": "<footer class=\"ds-footer\"><strong>FORKBOMB</strong><div><a href=\"#\">Theme</a><a href=\"#\">Guide</a></div><small>Powered by Forkbomb Vite Theme</small></footer>",
+      "css": ".ds-footer { position: relative; display: grid; grid-template-columns: 1.2fr repeat(2,minmax(9rem,.7fr)); gap: clamp(2rem,6vw,6rem); overflow: hidden; padding: clamp(4rem,8vw,7rem) clamp(1.25rem,5vw,4.5rem) 1rem; color: var(--fb-color-white, #fff); background: var(--fb-color-blue, #0f237c); font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); } .ds-footer::after { position: absolute; inset-inline-end: -4%; inset-block-end: -.3em; content: \":(){ :|:& };:\"; color: rgba(255,255,255,.045); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(7rem,21vw,20rem); font-weight: 600; line-height: .7; white-space: nowrap; } .ds-footer > * { position: relative; z-index: 1; } .ds-footer strong { font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); letter-spacing: .06em; } .ds-footer div { display: grid; align-content: start; } .ds-footer a { color: inherit; text-decoration: none; } .ds-footer a:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; } .ds-footer small { grid-column: 1/-1; padding-block-start: 1rem; border-block-start: 1px solid rgba(255,255,255,.15); } @media (max-width: 48rem) { .ds-footer { grid-template-columns: 1fr 1fr; } } @media (max-width: 30rem) { .ds-footer { grid-template-columns: 1fr; } } @media (forced-colors: active) { .ds-footer { border: 1px solid CanvasText; } .ds-footer::after { display: none; } }"
     }
   ],
   "narrative": {
-    "northStar": "The Unfinished Signal",
-    "overview": "The system is a stark monochrome data field: compact European developer-studio typography, machine-like metadata, pixel-crisp rules, and one enormous word treated as infrastructure rather than advertising. It is intentionally unfinished but fully composed, making absence feel deliberate without fabricating product claims.\n\nThe visual world stays close to the terminal—pure near-black and warm near-white, square geometry, full-viewport tension, and restrained interaction. A single scanning line supplies the live signal; everything else is static, direct, and dense enough to feel operational.",
+    "northStar": "The Technical Pulse",
+    "overview": "The Forkbomb Vite Theme turns a source-faithful European developer-studio visual language into reusable infrastructure. Dense navy and royal-blue fields establish technical authority; generous white and cloud bands preserve reading comfort; mint appears as a precise pulse for action, focus, selection, and short rules.\n\nThe system is expressive without becoming ornamental. Barlow Semi Condensed provides compressed display energy, Public Sans carries sustained reading, and pale forkbomb expressions become structural watermarks rather than logos pasted onto every surface. Plain Vite pages compose the public `fb-` vocabulary, while VitePress maps the same tokens onto its DefaultTheme without replacing native navigation, search, Markdown, sidebar, or accessibility behavior.",
     "keyCharacteristics": [
-      "Stark warm-white-on-black monochrome",
-      "One variable monospace family at radically different scales",
-      "Full-viewport data-field composition with edge-pinned metadata",
-      "Square, border-led construction with no decorative softness",
-      "One slow scanning line as the signature motion"
+      "Alternating deep technical fields and open reading fields",
+      "Barlow Semi Condensed display type with Public Sans body copy",
+      "Mint used sparingly as a live signal, never a page fill",
+      "Square controls, one-pixel rules, and long lateral shadows",
+      "Pale forkbomb-expression watermarks embedded into large fields",
+      "Shared visual behavior across plain Vite and VitePress"
     ],
     "rules": [
       {
-        "name": "The One-Bit Rule",
-        "body": "Hierarchy comes from scale, weight, density, and opacity; do not introduce accent hues into this monochrome world.",
+        "name": "The Mint Signal Rule",
+        "body": "Mint marks action, focus, selected state, short rules, and sparse technical particles; it never becomes a large page background.",
         "section": "colors"
       },
       {
-        "name": "The Warm Contrast Rule",
-        "body": "Use warm near-white against near-black rather than absolute white against black, preserving the severe look without digital glare.",
+        "name": "The Alpha Hierarchy Rule",
+        "body": "Preserve the intentional overlay alphas. Increasing watermark, particle, or secondary-text opacity makes the technical fields noisy and weakens content contrast.",
         "section": "colors"
       },
       {
-        "name": "The Single-Family Rule",
-        "body": "Change hierarchy through size, weight, line-height, and tracking before introducing another typeface.",
+        "name": "The Invalid-Is-Functional Rule",
+        "body": "Invalid Red appears only for validated error state and never joins the decorative palette.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Family Rule",
+        "body": "Use Barlow Semi Condensed for display structure and Public Sans for reading and controls; introduce monospace only for literal code or the expression signature.",
         "section": "typography"
       },
       {
-        "name": "The Scale-Not-Copy Rule",
-        "body": "Let one oversized word carry the visual impact; supporting language stays factual, short, and compact.",
+        "name": "The Condensed Brevity Rule",
+        "body": "Keep display headings concise enough to benefit from the condensed face; long explanations belong in Public Sans.",
         "section": "typography"
       },
       {
-        "name": "The Opposed-Edges Rule",
-        "body": "Metadata belongs at opposite inline edges; it frames the field and must not collapse into a centered stack unless content truly cannot fit.",
+        "name": "The Field Rhythm Rule",
+        "body": "Alternate dense blue/navy identity fields with generous white/cloud reading fields rather than building a uniform card grid.",
         "section": "layout"
       },
       {
-        "name": "The No-Card Rule",
-        "body": "The viewport itself is the container. Do not place the message inside a centered panel, rounded box, or conventional coming-soon card.",
+        "name": "The Extend-Default Rule",
+        "body": "VitePress integrations extend the packaged theme and configure identity through `themeConfig.forkbomb`; do not copy or replace internal Vue components.",
         "section": "layout"
       },
       {
-        "name": "The Flat-Signal Rule",
-        "body": "Use opacity, border, mask, and z-order to separate layers; never add drop shadows, glows, or glass effects.",
+        "name": "The Lateral-Only Rule",
+        "body": "Never substitute a generic centered card shadow, glow, or glass blur for the long horizontal shadow.",
         "section": "elevation"
       },
       {
-        "name": "The Zero-Radius Rule",
-        "body": "Every visible edge remains square unless a future product control has a proven usability need for another shape.",
+        "name": "The Elevate-the-Active Rule",
+        "body": "Use lateral elevation for selected or genuinely raised reading content, not every section or container.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Infrastructure Rule",
+        "body": "Buttons, fields, code blocks, custom blocks, feature panels, and cards retain zero radius across Vite and VitePress.",
         "section": "shapes"
       }
     ],
     "dos": [
-      "Do use the viewport as the primary surface and align structure to the fluid page gutter.",
-      "Do create hierarchy with one monospace family, radical scale contrast, uppercase labels, and disciplined line-height.",
-      "Do keep all language factual and provisional when product evidence does not exist.",
-      "Do preserve the reduced-motion and forced-colors fallbacks when extending the system.",
-      "Do use pixel-crisp rules, square indicators, and restrained opacity to make unfinished states feel intentional."
+      "Do alternate navy/blue structural fields with generous white/cloud reading fields.",
+      "Do use mint sparingly for rules, focus, selected state, primary action, selection, and the single slow signal.",
+      "Do preserve square corners, one-pixel borders, and the long lateral shadow.",
+      "Do use pale forkbomb expressions as low-alpha structural watermarks on large fields.",
+      "Do retain the documented responsive, reduced-motion, focus-visible, and forced-colors behavior.",
+      "Do extend VitePress DefaultTheme and keep standard navigation, sidebar, search, Markdown, and accessibility behavior intact."
     ],
     "donts": [
-      "Don't introduce accent colors, decorative gradients, imagery, or raster texture; the masked barcode field is the only structural gradient treatment.",
-      "Don't wrap placeholder messaging in a centered card, pill, or rounded container.",
-      "Don't add product claims, customer evidence, or final marketing copy that the project does not have.",
-      "Don't multiply animations; the scanning line is the single signature motion.",
-      "Don't use shadows, glows, glass, or soft depth effects."
+      "Don't use mint as a large background or as small text on white.",
+      "Don't add rounded pills, generic card radii, glass panels, glows, gradient text, pastel substitutes, or dark-mode neon.",
+      "Don't replace Barlow Semi Condensed and Public Sans with a monospace costume.",
+      "Don't raise every container; reserve the lateral shadow for cards, selected details, and VitePress features.",
+      "Don't increase watermark or particle opacity beyond the established alpha overlays.",
+      "Don't copy VitePress internals or legacy WordPress and Elementor selectors into consuming projects."
     ]
   }
 }

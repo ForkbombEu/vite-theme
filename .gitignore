@@ -1,4 +1,7 @@
 node_modules/
 dist/
 .impeccable/review/
+.impeccable/reference/
+examples/vitepress/.vitepress/cache/
+examples/vitepress/.vitepress/dist/
 .DS_Store

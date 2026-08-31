@@ -1,0 +1,44 @@
+@layer forkbomb.tokens {
+  :root,
+  .fb-theme {
+    color-scheme: light;
+    --fb-color-navy: #050d30;
+    --fb-color-blue: #0f237c;
+    --fb-color-mint: #2dd8a3;
+    --fb-color-white: #ffffff;
+    --fb-color-cloud: #f7f7f7;
+    --fb-color-mist: #eef1f5;
+    --fb-color-ink: var(--fb-color-navy);
+    --fb-color-text-on-dark: #ffffff;
+    --fb-color-text-muted: #3f4b70;
+    --fb-color-rule: rgba(15, 35, 124, 0.22);
+    --fb-color-rule-on-dark: rgba(45, 216, 163, 0.6);
+    --fb-font-display: 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;
+    --fb-font-body: 'Public Sans', Arial, sans-serif;
+    --fb-font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+    --fb-text-xs: 0.75rem;
+    --fb-text-sm: 0.875rem;
+    --fb-text-body: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
+    --fb-text-lead: clamp(1.1rem, 1rem + 0.45vw, 1.3rem);
+    --fb-text-title: clamp(2rem, 1.55rem + 1.6vw, 2.5rem);
+    --fb-text-display: clamp(2.75rem, 1.7rem + 4.2vw, 5.75rem);
+    --fb-leading-tight: 0.98;
+    --fb-leading-title: 1.08;
+    --fb-leading-body: 1.55;
+    --fb-space-1: 0.5rem;
+    --fb-space-2: 0.75rem;
+    --fb-space-3: 1rem;
+    --fb-space-4: 1.5rem;
+    --fb-space-5: 2rem;
+    --fb-space-6: 3rem;
+    --fb-space-7: 4.5rem;
+    --fb-space-section: clamp(4.5rem, 8vw, 7.5rem);
+    --fb-container: 75rem;
+    --fb-gutter: clamp(1.25rem, 5vw, 4.5rem);
+    --fb-border: 1px solid var(--fb-color-blue);
+    --fb-shadow-card: 5rem 0 4.375rem -1.25rem rgba(0, 0, 0, 0.14);
+    --fb-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --fb-duration-fast: 160ms;
+    --fb-duration-slow: 900ms;
+  }
+}

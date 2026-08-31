@@ -1,0 +1,74 @@
+@layer forkbomb.base {
+  :where(html) {
+    min-inline-size: 20rem;
+    scroll-behavior: smooth;
+  }
+
+  :where(body) {
+    min-block-size: 100dvh;
+    margin: 0;
+    color: var(--fb-color-ink);
+    background: var(--fb-color-white);
+    font-family: var(--fb-font-body);
+    font-size: var(--fb-text-body);
+    line-height: var(--fb-leading-body);
+    text-rendering: optimizeLegibility;
+  }
+
+  :where(button, input, textarea, select) { font: inherit; }
+  :where(h1, h2, h3, h4, p, ul, ol, blockquote) { margin-block-start: 0; }
+
+  :where(h1, h2, h3, h4) {
+    color: var(--fb-color-blue);
+    font-family: var(--fb-font-display);
+    font-weight: 600;
+    line-height: var(--fb-leading-title);
+    text-wrap: balance;
+  }
+
+  :where(h1) {
+    max-inline-size: 15ch;
+    font-size: var(--fb-text-display);
+    letter-spacing: -0.03em;
+  }
+
+  :where(h2) { font-size: var(--fb-text-title); }
+  :where(h3) { font-size: clamp(1.3rem, 1.1rem + 0.7vw, 1.8rem); }
+  :where(p, li) { text-wrap: pretty; }
+  :where(p) { max-inline-size: 72ch; }
+
+  :where(a) {
+    color: var(--fb-color-blue);
+    text-decoration-color: var(--fb-color-mint);
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.2em;
+  }
+
+  :where(a, button, summary, input, textarea, select):focus-visible {
+    outline: 2px solid var(--fb-color-mint);
+    outline-offset: 4px;
+  }
+
+  :where(code, kbd, samp, pre) { font-family: var(--fb-font-mono); }
+
+  :where(code):not(:where(pre *)) {
+    padding: 0.12em 0.35em;
+    color: var(--fb-color-blue);
+    background: color-mix(in srgb, var(--fb-color-mint) 16%, white);
+  }
+
+  :where(pre) {
+    overflow: auto;
+    padding: var(--fb-space-4);
+    color: var(--fb-color-white);
+    background: var(--fb-color-navy);
+    border-inline-start: 2px solid var(--fb-color-mint);
+  }
+
+  :where(hr) { border: 0; border-block-start: 1px solid var(--fb-color-rule); }
+  ::selection { color: var(--fb-color-navy); background: var(--fb-color-mint); }
+
+  @media (prefers-reduced-motion: reduce) {
+    :where(html) { scroll-behavior: auto; }
+  }
+}

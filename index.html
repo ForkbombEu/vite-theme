@@ -3,42 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A temporary placeholder for a project currently in development."
-    />
-    <meta name="theme-color" content="#050505" />
-    <title>Placeholder</title>
+    <meta name="description" content="A reusable Forkbomb visual theme for Vite and VitePress projects." />
+    <meta name="theme-color" content="#0f237c" />
+    <title>Forkbomb Vite Theme</title>
   </head>
-  <body>
+  <body class="fb-theme">
     <!--
-      THESIS: A live signal marks the project as intentionally unfinished; it refuses the usual centered coming-soon card.
-      OWN-WORLD: Pure black and white, pixel-crisp rules, dense bars, oversized mono type, and compact machine metadata.
-      STORY: The visitor sees that the project exists, is in progress, and has no claims to make yet.
-      FIRST VIEWPORT: A full-screen data field frames one enormous PLACEHOLDER word, with status metadata pinned to opposite corners and the signal line crossing the page.
-      FORM: Data-field holding screen, pinned by the brief over seeded direction 320090e9; one restrained scanning line is the signature motion.
+      THESIS: Forkbomb's visual grammar becomes a reusable developer tool; the page refuses a generic component-catalog shell.
+      OWN-WORLD: Royal-blue and midnight fields, mint rules, Barlow Semi Condensed headings, Public Sans copy, square controls, ghost expressions, and long lateral shadows.
+      STORY: An agent sees the theme, its vocabulary, and the exact Vite and VitePress entry points, then can install it without reconstructing design decisions.
+      FIRST VIEWPORT: A compact blue brand bar caps a deep gradient hero; a giant pale forkbomb expression sits behind a left-aligned theme statement and two square actions.
+      FORM: Forkbomb product-site system extracted from the live reference; the user-pinned reference supersedes the earlier seed 320090e9.
       FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
     -->
-    <main class="page">
-      <header class="masthead" aria-label="Project status">
-        <span>PROJECT / 000</span>
-        <span class="status"><span class="status__light" aria-hidden="true"></span>IN PROGRESS</span>
+    <div class="fb-shell">
+      <header class="fb-nav">
+        <div class="fb-container fb-nav__inner">
+          <a class="fb-brand" href="#top" aria-label="Forkbomb Vite Theme home">
+            <span class="fb-brand__name">Forkbomb</span>
+            <span class="fb-brand__expression" aria-hidden="true">:(){ :|:&amp; };:</span>
+          </a>
+          <nav aria-label="Primary navigation">
+            <ul class="fb-nav__links">
+              <li><a href="#method">Method</a></li>
+              <li><a href="#tokens">Tokens</a></li>
+              <li><a href="#install">Install</a></li>
+              <li><a href="https://github.com/ForkbombEu/webpage-test/tree/main/examples/vitepress">VitePress</a></li>
+            </ul>
+            <details class="fb-nav__menu">
+              <summary>
+                <span class="fb-sr-only">Toggle primary navigation</span>
+                <span class="fb-nav__menu-icon" aria-hidden="true"></span>
+              </summary>
+              <ul>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#tokens">Tokens</a></li>
+                <li><a href="#install">Install</a></li>
+                <li><a href="https://github.com/ForkbombEu/webpage-test/tree/main/examples/vitepress">VitePress</a></li>
+              </ul>
+            </details>
+          </nav>
+        </div>
       </header>
 
-      <div class="signal" aria-hidden="true"></div>
+      <main id="top">
+        <section class="fb-hero" aria-labelledby="hero-title">
+          <div class="fb-container fb-hero__content">
+            <h1 id="hero-title">Forkbomb theme for Vite &amp; VitePress</h1>
+            <p class="fb-hero__lead">
+              One visual system, packaged as semantic CSS tokens, reusable layout patterns,
+              and a VitePress DefaultTheme extension.
+            </p>
+            <div class="fb-cluster">
+              <a class="fb-button fb-button--solid" href="#install">Start using it</a>
+              <a class="fb-button fb-button--on-dark" href="./THEME.md">Read the visual contract</a>
+            </div>
+          </div>
+        </section>
 
-      <section class="message" aria-labelledby="placeholder-title">
-        <p class="message__index">[ 00—00—00 ]</p>
-        <h1 id="placeholder-title">Place<wbr />holder</h1>
-        <p class="message__note">Something is taking shape here.</p>
-      </section>
+        <section id="method" class="fb-section fb-section--watermark" data-watermark="()">
+          <div class="fb-container">
+            <div class="fb-section__intro">
+              <h2 class="fb-section__title">A system an agent can apply</h2>
+              <p>
+                The theme separates source-faithful primitives from reusable patterns. Agents
+                can import the whole layer, override named tokens, or use the documented class
+                vocabulary without copying page-specific CSS.
+              </p>
+            </div>
 
-      <footer class="footer">
-        <span>STATUS: TEMPORARY</span>
-        <span>© <span id="year"></span></span>
+            <div class="fb-accordion">
+              <details open>
+                <summary>Semantic design tokens</summary>
+                <div class="fb-accordion__body">
+                  <p>Colors, type, spacing, shadows, timing, and container sizes use stable <code>--fb-*</code> names.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Plain Vite entry point</summary>
+                <div class="fb-accordion__body">
+                  <p>Import <code>@forkbomb/vite-theme/style.css</code>, then compose layouts with the <code>fb-</code> class vocabulary.</p>
+                </div>
+              </details>
+              <details>
+                <summary>VitePress theme extension</summary>
+                <div class="fb-accordion__body">
+                  <p>Export the packaged theme from <code>.vitepress/theme/index.ts</code> to gain the brand bar, footer, palette, typography, and Markdown styles.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Safe scaffold installer</summary>
+                <div class="fb-accordion__body">
+                  <p>The installer preserves existing content by default, supports a dry run, and only overwrites configuration when explicitly forced.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section id="tokens" class="fb-section fb-section--muted fb-section--watermark" data-watermark="{}">
+          <div class="fb-container">
+            <div class="fb-section__intro">
+              <h2 class="fb-section__title">The Forkbomb palette</h2>
+              <p>
+                Deep navy carries technical depth, royal blue owns navigation and structure,
+                mint marks action and state, while white and cloud fields keep documentation readable.
+              </p>
+            </div>
+
+            <div class="fb-token-row" aria-label="Theme color tokens">
+              <div class="fb-token fb-token--navy"><strong>Navy</strong><code>#050d30</code></div>
+              <div class="fb-token fb-token--blue"><strong>Blue</strong><code>#0f237c</code></div>
+              <div class="fb-token fb-token--mint"><strong>Mint</strong><code>#2dd8a3</code></div>
+              <div class="fb-token fb-token--cloud"><strong>Cloud</strong><code>#f7f7f7</code></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="install" class="fb-section fb-section--dark">
+          <div class="fb-container">
+            <div class="fb-section__intro">
+              <h2 class="fb-section__title">Install once, keep the method</h2>
+              <p>
+                The package exposes narrow entry points for Vite and VitePress, plus a copy-based
+                scaffold for repositories that prefer local ownership of their documentation theme.
+              </p>
+            </div>
+
+            <div class="fb-code-grid">
+              <div>
+                <h3>Vite</h3>
+                <pre><code>npm install @forkbomb/vite-theme
+
+// main.ts
+import '@forkbomb/vite-theme/style.css'</code></pre>
+              </div>
+              <div>
+                <h3>VitePress</h3>
+                <pre><code>// .vitepress/theme/index.ts
+export { default } from '@forkbomb/vite-theme/vitepress'</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="fb-footer">
+        <div class="fb-container fb-footer__inner">
+          <div class="fb-stack">
+            <a class="fb-brand" href="#top">
+              <span class="fb-brand__name">Forkbomb</span>
+              <span class="fb-brand__expression" aria-hidden="true">:(){ :|:&amp; };:</span>
+            </a>
+            <p>Reusable visual infrastructure for Vite-powered projects.</p>
+          </div>
+          <div>
+            <h3>Theme</h3>
+            <ul>
+              <li><a href="#tokens">Tokens</a></li>
+              <li><a href="#method">Patterns</a></li>
+              <li><a href="./THEME.md">Contract</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Use</h3>
+            <ul>
+              <li><a href="#install">Vite</a></li>
+              <li><a href="https://github.com/ForkbombEu/webpage-test/tree/main/examples/vitepress">VitePress</a></li>
+              <li><a href="./AGENTS.md">Agent guide</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="fb-container fb-footer__legal">
+          <span>© <span id="year"></span> Forkbomb</span>
+          <span>Built with Vite</span>
+        </div>
       </footer>
-    </main>
-
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
