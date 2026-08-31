@@ -18,7 +18,9 @@ npm install @forkbomb/vite-theme
 
 ```js
 // src/main.js
-import '@forkbomb/vite-theme/style.css'
+import { mountFooterVideos } from '@forkbomb/vite-theme'
+
+mountFooterVideos()
 ```
 
 Add `fb-theme` to the document body and compose with the public class vocabulary:
@@ -33,6 +35,12 @@ Add `fb-theme` to the document body and compose with the public class vocabulary
   </section>
 </body>
 ```
+
+For the source footer background, place a muted, looping `<video>` with
+`class="fb-footer__video"`, `data-fb-footer-video`, its URL in `data-src`, and
+`preload="none"`. The helper attaches the source near the viewport and pauses
+playback offscreen, in hidden tabs, and for reduced-motion users. VitePress wires
+this behavior automatically.
 
 Import only tokens when an existing interface should keep its own components:
 
@@ -52,7 +60,7 @@ export { default } from '@forkbomb/vite-theme/vitepress'
 ```
 
 The package extends VitePress's default theme, injects the responsive Forkbomb
-brand, right-hand hero animation, and footer, registers `<ForkbombSection>`, and
+brand, right-hand hero animation, and video-backed footer, registers `<ForkbombSection>`, and
 maps the visual tokens onto VitePress variables. Configure project-specific identity under
 `themeConfig.forkbomb`:
 

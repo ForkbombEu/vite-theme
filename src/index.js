@@ -1,5 +1,11 @@
 import './theme/index.css'
 
+export {
+  FORKBOMB_FOOTER_VIDEO_URL,
+  mountFooterVideo,
+  mountFooterVideos,
+} from './theme/footer-video.js'
+
 export const forkbombTheme = Object.freeze({
   classes: {
     theme: 'fb-theme',

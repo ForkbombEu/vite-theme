@@ -24,8 +24,10 @@ This repository is the source for `@forkbomb/vite-theme`.
 - Corners: square. Borders: one pixel. Mint: signal, not page fill.
 - Depth: the long lateral soft shadow; no generic card shadow or glow.
 - Motif: pale forkbomb expression on blue/navy fields and large white sections.
-- Motion: the right-hand hero Lottie is the only authored sequence; keep its lazy,
-  play-once, visibility-aware, and reduced-motion behavior.
+- Motion: the right-hand hero Lottie is the focal authored sequence; keep its lazy,
+  play-once, visibility-aware, and reduced-motion behavior. The footer video is
+  ambient: never add an eager `src` or `autoplay`; use `mountFooterVideo` with the
+  `data-fb-footer-video` and `data-src` contract.
 
 ## VitePress rules
 

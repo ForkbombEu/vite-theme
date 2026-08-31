@@ -11,7 +11,7 @@ royal-blue bands. Mint is an action and state signal, never a large background.
 Large pale forkbomb expressions work as structural watermarks. Rules stay thin,
 controls stay square, and elevated white content uses a long horizontal soft
 shadow rather than rounded cards. The source white-and-mint vector sequence is
-the hero's single authored animation.
+the hero's focal animation; the source video is an ambient footer layer.
 
 ## Tokens
 
@@ -46,7 +46,8 @@ the theme import; do not fork component files for simple palette or spacing chan
 - `fb-accordion`: native `<details>` pattern with mint selected state.
 - `fb-field`: square text field with blue border and mint focus ring.
 - `fb-token-row`: palette/reference strip.
-- `fb-footer`: static royal-blue multi-column close with an expression watermark.
+- `fb-footer`: royal-blue multi-column close with an optional source video and expression watermark.
+- `fb-footer__video`: decorative background video; pair `data-fb-footer-video` with the packaged playback helper.
 
 ## Typography
 
@@ -61,7 +62,8 @@ Patterns respond to their container when practical and use the source site's
 mobile boundary near 48rem for navigation and major compositions. Hero and
 footer fields keep their color and identity on small screens; layout compresses,
 not the visual language. The hero animation stacks below its copy; reduced-motion
-users receive its completed static frame.
+users receive its completed static frame. The footer video remains behind the
+content and is cropped with `object-fit: cover` at every size.
 
 ## Accessibility
 
@@ -72,6 +74,9 @@ users receive its completed static frame.
 - Forced-colors mode removes ghost watermarks and replaces shadows with borders.
 - The hero animation starts only in view, pauses offscreen or while the page is
   hidden, and becomes a static completed frame under reduced motion.
+- The footer video has no initial `src`: its metadata loads only near the viewport,
+  playback starts in view, and it pauses offscreen or while the page is hidden.
+  Reduced-motion users retain the static blue footer without requesting the MP4.
 
 ## Do / don't
 

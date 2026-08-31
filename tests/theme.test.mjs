@@ -75,6 +75,24 @@ test('hero uses the source Lottie animation as its right-hand visual', () => {
   assert.equal(data.h, 160)
 })
 
+test('footer video loads near view and pauses when it cannot be seen', () => {
+  const html = read('index.html')
+  const components = read('src/theme/components.css')
+  const video = read('src/theme/footer-video.js')
+  const vitepressFooter = read('src/vitepress/components/ForkbombFooter.vue')
+
+  assert.match(html, /data-fb-footer-video/)
+  assert.match(html, /data-src="https:\/\/forkbomb\.solutions\/wp-content\/uploads\/2023\/07\/forkbomb_bg_new_opt\.mp4"/)
+  assert.doesNotMatch(html, /<video[^>]*\ssrc=/)
+  assert.match(video, /rootMargin: '320px 0px'/)
+  assert.match(video, /prefers-reduced-motion: reduce/)
+  assert.match(video, /document\.hidden/)
+  assert.match(video, /video\.pause\(\)/)
+  assert.match(components, /\.fb-footer__video/)
+  assert.match(vitepressFooter, /mountFooterVideo/)
+  assert.match(vitepressFooter, /data-fb-footer-video/)
+})
+
 test('installer preserves existing files unless force is explicit', () => {
   const target = mkdtempSync(join(tmpdir(), 'forkbomb-theme-'))
   const configDir = join(target, '.vitepress')

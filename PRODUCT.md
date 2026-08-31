@@ -28,6 +28,8 @@ theme behavior.
 
 - Export complete CSS, tokens-only CSS, a small JavaScript manifest, and a
   VitePress DefaultTheme extension.
+- Reuse the source footer video through a visibility-aware helper that avoids
+  eager transfer, offscreen playback, and motion for reduced-motion users.
 - Provide stable `fb-*` composition classes and semantic `--fb-*` custom properties.
 - Include a copy-based VitePress scaffold that preserves consumer files unless
   `--force` is explicit.

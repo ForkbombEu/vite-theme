@@ -277,7 +277,7 @@ Corners are square throughout (`border-radius: 0`). Controls have a minimum 2.75
 - **Reading Bands:** White by default, Cloud for muted alternation, Deep Navy for dark sections.
 - **Heading Signal:** A 3.5rem by 2px mint rule under section titles and VitePress level-two headings.
 - **Watermark:** Optional oversized content-driven symbols use a 4% blue mix on light fields; hero and footer use the pale full expression.
-- **Footer:** Static royal blue, multi-column, white copy, and a 4.5% expression watermark behind the legal boundary.
+- **Footer:** The source MP4 sits under a navy-to-blue legibility veil, multi-column white copy, and a 4.5% expression watermark. Its source is attached only near view; playback pauses offscreen and in hidden tabs, while reduced-motion retains the static blue fallback without requesting the video.
 
 ### VitePress Adaptation
 
@@ -291,7 +291,7 @@ Corners are square throughout (`border-radius: 0`). Controls have a minimum 2.75
 ### Do:
 
 - **Do** alternate navy/blue structural fields with generous white/cloud reading fields.
-- **Do** use mint sparingly for rules, focus, selected state, primary action, selection, and the single hero vector sequence.
+- **Do** use mint sparingly for rules, focus, selected state, primary action, selection, and the hero vector sequence.
 - **Do** preserve square corners, one-pixel borders, and the long lateral shadow.
 - **Do** use pale forkbomb expressions as low-alpha structural watermarks on large fields.
 - **Do** retain the documented responsive, reduced-motion, focus-visible, and forced-colors behavior.

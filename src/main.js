@@ -1,8 +1,10 @@
 import './theme/index.css'
+import { mountFooterVideos } from './theme/footer-video.js'
 import { mountHeroAnimations } from './theme/hero-animation.js'
 
 document.querySelector('#year').textContent = String(new Date().getFullYear())
 mountHeroAnimations()
+mountFooterVideos()
 
 for (const item of document.querySelectorAll('.fb-accordion details')) {
   item.addEventListener('toggle', () => {
