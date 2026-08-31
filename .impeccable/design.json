@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-31T08:34:32Z",
+  "title": "Design System: Project Placeholder",
+  "extensions": {
+    "colorMeta": {
+      "primary-ink": {
+        "role": "primary",
+        "displayName": "Warm Signal Ink",
+        "canonical": "#f5f5f0",
+        "tonalRamp": [
+          "oklch(15% 0.004 100)",
+          "oklch(26% 0.004 100)",
+          "oklch(38% 0.004 100)",
+          "oklch(50% 0.004 100)",
+          "oklch(62% 0.004 100)",
+          "oklch(74% 0.004 100)",
+          "oklch(86% 0.004 100)",
+          "oklch(95% 0.004 100)"
+        ]
+      },
+      "signal-line": {
+        "role": "neutral",
+        "displayName": "Ghost Rule",
+        "canonical": "rgba(245, 245, 240, 0.28)",
+        "tonalRamp": [
+          "oklch(15% 0.004 100 / 0.28)",
+          "oklch(26% 0.004 100 / 0.28)",
+          "oklch(38% 0.004 100 / 0.28)",
+          "oklch(50% 0.004 100 / 0.28)",
+          "oklch(62% 0.004 100 / 0.28)",
+          "oklch(74% 0.004 100 / 0.28)",
+          "oklch(86% 0.004 100 / 0.28)",
+          "oklch(95% 0.004 100 / 0.28)"
+        ]
+      },
+      "terminal-ground": {
+        "role": "neutral",
+        "displayName": "Terminal Ground",
+        "canonical": "#050505",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(74% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Word",
+        "purpose": "The singular oversized project-state word."
+      },
+      "body": {
+        "displayName": "Status Copy",
+        "purpose": "Short index and provisional explanatory notes."
+      },
+      "metadata": {
+        "displayName": "Machine Metadata",
+        "purpose": "Edge-pinned project, status, and time labels."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "signal-scan",
+        "value": "7s cubic-bezier(0.16, 1, 0.3, 1) infinite",
+        "purpose": "Moves the single scan line across the viewport, staying quiet for most of the cycle."
+      },
+      {
+        "name": "signal-reduced-motion",
+        "value": "none; opacity: 0.35",
+        "purpose": "Stops scanning and leaves a subdued static rule when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact",
+        "value": "36rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Metadata Bar",
+      "kind": "nav",
+      "refersTo": "metadata-bar",
+      "description": "An edge-pinned row for compact project and status facts.",
+      "html": "<div class=\"ds-metadata-bar\"><span>PROJECT / 000</span><span>STATUS: TEMPORARY</span></div>",
+      "css": ".ds-metadata-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 0 1.1rem; color: var(--ink, #f5f5f0); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; font-size: clamp(0.68rem, 0.6rem + 0.25vw, 0.85rem); line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 1px solid var(--line, rgba(245, 245, 240, 0.28)); }"
+    },
+    {
+      "name": "Status Indicator",
+      "kind": "custom",
+      "refersTo": "status-light",
+      "description": "A hard-square live mark paired with a compact uppercase status.",
+      "html": "<span class=\"ds-status\"><span class=\"ds-status-light\" aria-hidden=\"true\"></span>IN PROGRESS</span>",
+      "css": ".ds-status { display: inline-flex; align-items: center; gap: 0.65rem; color: var(--ink, #f5f5f0); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; font-size: clamp(0.68rem, 0.6rem + 0.25vw, 0.85rem); line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; } .ds-status-light { inline-size: 0.55rem; block-size: 0.55rem; background: currentColor; }"
+    },
+    {
+      "name": "Display Message",
+      "kind": "custom",
+      "refersTo": "display-word",
+      "description": "The oversized unboxed placeholder word with an honest compact note.",
+      "html": "<section class=\"ds-message\"><p class=\"ds-message-index\">[ 00—00—00 ]</p><h1>PLACEHOLDER</h1><p class=\"ds-message-note\">SOMETHING IS TAKING SHAPE HERE.</p></section>",
+      "css": ".ds-message { color: var(--ink, #f5f5f0); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; } .ds-message h1 { max-inline-size: 100%; margin: clamp(1.25rem, 3vw, 2.5rem) 0 clamp(1rem, 2vw, 1.75rem); font-size: clamp(3.1rem, 13.7vw, 12rem); font-weight: 700; line-height: 0.76; letter-spacing: -0.04em; text-transform: uppercase; overflow-wrap: anywhere; } .ds-message-index, .ds-message-note { margin: 0; font-size: clamp(0.72rem, 0.63rem + 0.35vw, 1rem); line-height: 1.4; letter-spacing: 0.02em; text-transform: uppercase; } .ds-message-note { max-inline-size: 34ch; } @media (max-width: 36rem) { .ds-message h1 { font-size: clamp(3.2rem, 20vw, 6rem); line-height: 0.84; } }"
+    },
+    {
+      "name": "Data Field",
+      "kind": "custom",
+      "description": "A square full-width field with barcode texture and inset hairline boundaries.",
+      "html": "<div class=\"ds-data-field\"><span>PROJECT / 000</span><strong>PLACEHOLDER</strong><span>STATUS: TEMPORARY</span></div>",
+      "css": ".ds-data-field { position: relative; isolation: isolate; display: grid; min-block-size: 18rem; padding: clamp(1rem, 2.4vw, 2.5rem); overflow: hidden; color: var(--ink, #f5f5f0); background: var(--ground, #050505); font-family: \"Azeret Mono Variable\", ui-monospace, monospace; text-transform: uppercase; border-block: 1px solid var(--line, rgba(245, 245, 240, 0.28)); } .ds-data-field::before { position: absolute; inset: 0; z-index: -1; content: \"\"; opacity: 0.22; background-image: repeating-linear-gradient(90deg, transparent 0, transparent 0.42rem, var(--ink, #f5f5f0) 0.42rem, var(--ink, #f5f5f0) 0.48rem, transparent 0.48rem, transparent 1.3rem); mask-image: linear-gradient(to bottom, #000 0 12%, transparent 36% 68%, #000 92%); } .ds-data-field strong { align-self: center; font-size: clamp(2.5rem, 10vw, 7rem); line-height: 0.8; letter-spacing: -0.04em; overflow-wrap: anywhere; } .ds-data-field span:last-child { align-self: end; justify-self: end; }"
+    },
+    {
+      "name": "Scan Signal",
+      "kind": "custom",
+      "refersTo": "scan-line",
+      "description": "The sole motion signature: a one-pixel line crossing a dark field.",
+      "html": "<div class=\"ds-scan-field\" aria-hidden=\"true\"><span class=\"ds-scan-line\"></span></div>",
+      "css": ".ds-scan-field { position: relative; min-block-size: 12rem; overflow: hidden; background: var(--ground, #050505); border-block: 1px solid var(--line, rgba(245, 245, 240, 0.28)); } .ds-scan-line { position: absolute; inset-inline: 0; inset-block-start: 50%; block-size: 1px; background: var(--ink, #f5f5f0); animation: ds-signal-scan 7s cubic-bezier(0.16, 1, 0.3, 1) infinite; } @keyframes ds-signal-scan { 0%, 82%, 100% { transform: translateY(-5rem); opacity: 0.18; } 92% { transform: translateY(5rem); opacity: 1; } } @media (prefers-reduced-motion: reduce) { .ds-scan-line { animation: none; opacity: 0.35; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Unfinished Signal",
+    "overview": "The system is a stark monochrome data field: compact European developer-studio typography, machine-like metadata, pixel-crisp rules, and one enormous word treated as infrastructure rather than advertising. It is intentionally unfinished but fully composed, making absence feel deliberate without fabricating product claims.\n\nThe visual world stays close to the terminal—pure near-black and warm near-white, square geometry, full-viewport tension, and restrained interaction. A single scanning line supplies the live signal; everything else is static, direct, and dense enough to feel operational.",
+    "keyCharacteristics": [
+      "Stark warm-white-on-black monochrome",
+      "One variable monospace family at radically different scales",
+      "Full-viewport data-field composition with edge-pinned metadata",
+      "Square, border-led construction with no decorative softness",
+      "One slow scanning line as the signature motion"
+    ],
+    "rules": [
+      {
+        "name": "The One-Bit Rule",
+        "body": "Hierarchy comes from scale, weight, density, and opacity; do not introduce accent hues into this monochrome world.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warm Contrast Rule",
+        "body": "Use warm near-white against near-black rather than absolute white against black, preserving the severe look without digital glare.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single-Family Rule",
+        "body": "Change hierarchy through size, weight, line-height, and tracking before introducing another typeface.",
+        "section": "typography"
+      },
+      {
+        "name": "The Scale-Not-Copy Rule",
+        "body": "Let one oversized word carry the visual impact; supporting language stays factual, short, and compact.",
+        "section": "typography"
+      },
+      {
+        "name": "The Opposed-Edges Rule",
+        "body": "Metadata belongs at opposite inline edges; it frames the field and must not collapse into a centered stack unless content truly cannot fit.",
+        "section": "layout"
+      },
+      {
+        "name": "The No-Card Rule",
+        "body": "The viewport itself is the container. Do not place the message inside a centered panel, rounded box, or conventional coming-soon card.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat-Signal Rule",
+        "body": "Use opacity, border, mask, and z-order to separate layers; never add drop shadows, glows, or glass effects.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Zero-Radius Rule",
+        "body": "Every visible edge remains square unless a future product control has a proven usability need for another shape.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do use the viewport as the primary surface and align structure to the fluid page gutter.",
+      "Do create hierarchy with one monospace family, radical scale contrast, uppercase labels, and disciplined line-height.",
+      "Do keep all language factual and provisional when product evidence does not exist.",
+      "Do preserve the reduced-motion and forced-colors fallbacks when extending the system.",
+      "Do use pixel-crisp rules, square indicators, and restrained opacity to make unfinished states feel intentional."
+    ],
+    "donts": [
+      "Don't introduce accent colors, decorative gradients, imagery, or raster texture; the masked barcode field is the only structural gradient treatment.",
+      "Don't wrap placeholder messaging in a centered card, pill, or rounded container.",
+      "Don't add product claims, customer evidence, or final marketing copy that the project does not have.",
+      "Don't multiply animations; the scanning line is the single signature motion.",
+      "Don't use shadows, glows, glass, or soft depth effects."
+    ]
+  }
+}
