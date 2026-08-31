@@ -10,7 +10,8 @@ The system alternates readable white and cloud content fields with dense navy or
 royal-blue bands. Mint is an action and state signal, never a large background.
 Large pale forkbomb expressions work as structural watermarks. Rules stay thin,
 controls stay square, and elevated white content uses a long horizontal soft
-shadow rather than rounded cards.
+shadow rather than rounded cards. The source white-and-mint vector sequence is
+the hero's single authored animation.
 
 ## Tokens
 
@@ -35,7 +36,8 @@ the theme import; do not fork component files for simple palette or spacing chan
 - `fb-container`: centered maximum-width content with fluid gutters.
 - `fb-nav`: royal-blue brand bar; pair with `fb-nav__inner` and `fb-nav__links`.
 - `fb-brand`: two-line name plus forkbomb expression.
-- `fb-hero`: navy gradient field with the expression watermark and mint signal.
+- `fb-hero`: two-column navy identity field with copy, watermark, particles, and animation.
+- `fb-hero__animation`: source-faithful Lottie mark placed right of the hero copy.
 - `fb-section`: standard reading band; add `--muted`, `--dark`, or `--watermark`.
 - `fb-section__intro`: title/copy split that stacks responsively.
 - `fb-section__title`: Barlow heading with a short mint rule.
@@ -44,7 +46,7 @@ the theme import; do not fork component files for simple palette or spacing chan
 - `fb-accordion`: native `<details>` pattern with mint selected state.
 - `fb-field`: square text field with blue border and mint focus ring.
 - `fb-token-row`: palette/reference strip.
-- `fb-footer`: royal-blue multi-column close with an expression watermark.
+- `fb-footer`: static royal-blue multi-column close with an expression watermark.
 
 ## Typography
 
@@ -58,7 +60,8 @@ remain between 45 and 72 characters per line where possible.
 Patterns respond to their container when practical and use the source site's
 mobile boundary near 48rem for navigation and major compositions. Hero and
 footer fields keep their color and identity on small screens; layout compresses,
-not the visual language. Reduced-motion users receive a static mint signal.
+not the visual language. The hero animation stacks below its copy; reduced-motion
+users receive its completed static frame.
 
 ## Accessibility
 
@@ -67,7 +70,8 @@ not the visual language. Reduced-motion users receive a static mint signal.
 - Every custom focus state uses a two-pixel mint outline with offset.
 - Native `<details>` retains keyboard and assistive-technology behavior.
 - Forced-colors mode removes ghost watermarks and replaces shadows with borders.
-- Motion is disabled rather than merely accelerated under reduced motion.
+- The hero animation starts only in view, pauses offscreen or while the page is
+  hidden, and becomes a static completed frame under reduced motion.
 
 ## Do / don't
 

@@ -126,6 +126,19 @@
   }
 
   .VPHomeHero .container { position: relative; z-index: 1; }
+  .VPHomeHero .image { order: 2; }
+  .VPHomeHero .image-container {
+    position: relative;
+    inset: auto;
+    inline-size: 100%;
+    block-size: auto;
+    transform: none;
+  }
+  .VPHomeHero .image-bg { display: none; }
+  .VPHomeHero .fb-vp-hero-animation {
+    inline-size: min(100%, 28rem);
+    margin-inline: auto;
+  }
   .VPHomeHero .name,
   .VPHomeHero .text { color: var(--fb-color-white); font-family: var(--fb-font-display); }
   .VPHomeHero .name .clip {
@@ -191,4 +204,9 @@
     .VPNavScreenMenuLink,
     .VPNavScreenMenuGroup .button { color: var(--fb-color-white); }
     .VPHomeHero::before { inset-inline-start: 18%; font-size: 10rem; }
+    .VPHomeHero .image {
+      inline-size: 100%;
+      margin: var(--fb-space-5) 0 0;
+    }
+    .VPHomeHero .fb-vp-hero-animation { inline-size: min(20rem, 82vw); }
   }

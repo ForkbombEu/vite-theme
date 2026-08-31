@@ -1,6 +1,8 @@
 import './theme/index.css'
+import { mountHeroAnimations } from './theme/hero-animation.js'
 
 document.querySelector('#year').textContent = String(new Date().getFullYear())
+mountHeroAnimations()
 
 for (const item of document.querySelectorAll('.fb-accordion details')) {
   item.addEventListener('toggle', () => {

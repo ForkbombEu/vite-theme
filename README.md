@@ -52,8 +52,8 @@ export { default } from '@forkbomb/vite-theme/vitepress'
 ```
 
 The package extends VitePress's default theme, injects the responsive Forkbomb
-brand and footer, registers `<ForkbombSection>`, and maps the visual tokens onto
-VitePress variables. Configure project-specific identity under
+brand, right-hand hero animation, and footer, registers `<ForkbombSection>`, and
+maps the visual tokens onto VitePress variables. Configure project-specific identity under
 `themeConfig.forkbomb`:
 
 ```ts

@@ -123,7 +123,7 @@ The system is expressive without becoming ornamental. Barlow Semi Condensed prov
 
 - Alternating deep technical fields and open reading fields
 - Barlow Semi Condensed display type with Public Sans body copy
-- Mint used sparingly as a live signal, never a page fill
+- Mint used sparingly as a live signal, including the right-hand hero vector sequence
 - Square controls, one-pixel rules, and long lateral shadows
 - Pale forkbomb-expression watermarks embedded into large fields
 - Shared visual behavior across plain Vite and VitePress
@@ -135,7 +135,7 @@ The palette separates structural depth from reading clarity, then uses exact alp
 ### Primary
 
 - **Structural Blue** (`structural-blue`, #0f237c): Navigation, footer fields, headings, links, borders, and the upper edge of the hero gradient.
-- **Signal Mint** (`signal-mint`, #2dd8a3): Primary actions, focus outlines, active accordion rails, section rules, selection, and the slow hero signal. Pair mint text with navy; do not use it as ordinary text on white.
+- **Signal Mint** (`signal-mint`, #2dd8a3): Primary actions, focus outlines, active accordion rails, section rules, selection, and the hero vector sequence. Pair mint text with navy; do not use it as ordinary text on white.
 
 ### Secondary
 
@@ -239,8 +239,9 @@ Corners are square throughout (`border-radius: 0`). Controls have a minimum 2.75
 
 - **Field:** A structural-blue-to-deep-navy vertical gradient with sparse one-pixel mint and white particles.
 - **Watermark:** The full forkbomb expression in Barlow at 5.5% white, shifted behind content.
-- **Signal:** One vertical mint gradient line breathes over five seconds with the standard decisive ease.
-- **Accessibility:** Under `prefers-reduced-motion: reduce` the signal becomes static at 55% opacity; `forced-colors: active` hides the watermark and adds a structural border.
+- **Composition:** Copy occupies the left side while the source `data-5.json` vector sequence occupies the right. Below 48rem they stack with the animation centered under the copy.
+- **Motion:** The white-and-mint mark plays once when at least a quarter visible, pauses offscreen or while the page is hidden, and resolves to its completed static frame under reduced motion.
+- **Accessibility:** The animation is decorative and hidden from assistive technology; `forced-colors: active` hides the watermark and adds a structural border.
 
 ### Buttons
 
@@ -276,7 +277,7 @@ Corners are square throughout (`border-radius: 0`). Controls have a minimum 2.75
 - **Reading Bands:** White by default, Cloud for muted alternation, Deep Navy for dark sections.
 - **Heading Signal:** A 3.5rem by 2px mint rule under section titles and VitePress level-two headings.
 - **Watermark:** Optional oversized content-driven symbols use a 4% blue mix on light fields; hero and footer use the pale full expression.
-- **Footer:** Royal blue, multi-column, white copy, and a 4.5% expression watermark behind the legal boundary.
+- **Footer:** Static royal blue, multi-column, white copy, and a 4.5% expression watermark behind the legal boundary.
 
 ### VitePress Adaptation
 
@@ -290,7 +291,7 @@ Corners are square throughout (`border-radius: 0`). Controls have a minimum 2.75
 ### Do:
 
 - **Do** alternate navy/blue structural fields with generous white/cloud reading fields.
-- **Do** use mint sparingly for rules, focus, selected state, primary action, selection, and the single slow signal.
+- **Do** use mint sparingly for rules, focus, selected state, primary action, selection, and the single hero vector sequence.
 - **Do** preserve square corners, one-pixel borders, and the long lateral shadow.
 - **Do** use pale forkbomb expressions as low-alpha structural watermarks on large fields.
 - **Do** retain the documented responsive, reduced-motion, focus-visible, and forced-colors behavior.

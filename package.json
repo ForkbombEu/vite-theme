@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Forkbomb visual system for Vite and VitePress projects",
   "type": "module",
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
     ".": "./src/index.js",
     "./style.css": "./src/theme/index.css",
@@ -11,7 +13,14 @@
     "./vitepress": "./src/vitepress/index.ts",
     "./package.json": "./package.json"
   },
-  "files": ["src", "template", "install.sh", "README.md", "THEME.md", "AGENTS.md"],
+  "files": [
+    "src",
+    "template",
+    "install.sh",
+    "README.md",
+    "THEME.md",
+    "AGENTS.md"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -25,15 +34,20 @@
   },
   "dependencies": {
     "@fontsource/barlow-semi-condensed": "^5.3.0",
-    "@fontsource/public-sans": "^5.3.0"
+    "@fontsource/public-sans": "^5.3.0",
+    "lottie-web": "^5.13.0"
   },
   "peerDependencies": {
     "vitepress": ">=1.6.0 <3",
     "vue": ">=3.5.0 <4"
   },
   "peerDependenciesMeta": {
-    "vitepress": { "optional": true },
-    "vue": { "optional": true }
+    "vitepress": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "typescript": "^7.0.2",
@@ -49,6 +63,6 @@
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ForkbombEu/webpage-test.git"
+    "url": "git+https://github.com/ForkbombEu/vite-theme.git"
   }
 }

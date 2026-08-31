@@ -417,7 +417,7 @@
       {
         "name": "ease-out",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Decisive easing for the slow technical signal."
+        "purpose": "Decisive easing for authored state transitions."
       },
       {
         "name": "duration-fast",
@@ -430,9 +430,9 @@
         "purpose": "Reserved slow transition token."
       },
       {
-        "name": "hero-signal",
-        "value": "5s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate",
-        "purpose": "The one slow mint pulse; disabled under reduced motion."
+        "name": "hero-lottie",
+        "value": "24fps, frames 0–600, play once on intersection",
+        "purpose": "The source white-and-mint hero sequence; paused offscreen and static at its completed frame under reduced motion."
       }
     ],
     "breakpoints": [
@@ -473,9 +473,9 @@
     {
       "name": "Technical Hero",
       "kind": "custom",
-      "description": "The layered blue-to-navy identity field with expression watermark and one mint pulse.",
-      "html": "<section class=\"ds-hero\"><div class=\"ds-hero-content\"><h1>Technical infrastructure, clearly expressed</h1><p>One reusable visual system for product pages and documentation.</p></div></section>",
-      "css": ".ds-hero { position: relative; display: grid; min-block-size: clamp(31rem, 72dvh, 47rem); align-items: center; overflow: hidden; isolation: isolate; padding: clamp(1.25rem, 5vw, 4.5rem); color: var(--fb-color-white, #fff); background: radial-gradient(circle at 15% 22%, rgba(45,216,163,.13) 0 1px, transparent 2px), radial-gradient(circle at 73% 38%, rgba(255,255,255,.13) 0 1px, transparent 2px), linear-gradient(180deg, var(--fb-color-blue, #0f237c), var(--fb-color-navy, #050d30)); background-size: 7rem 7rem, 10rem 10rem, auto; } .ds-hero::before { position: absolute; inset-inline-start: 45%; inset-block-start: 42%; z-index: -1; content: \":(){ :|:& };:\"; color: rgba(255,255,255,.055); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(8rem, 20vw, 22rem); font-weight: 600; line-height: .7; white-space: nowrap; transform: translate(-22%,-50%); } .ds-hero::after { position: absolute; inset-inline-start: 50%; inset-block: 19% 13%; z-index: -1; inline-size: 1px; content: \"\"; background: linear-gradient(transparent, var(--fb-color-mint, #2dd8a3), transparent); animation: ds-pulse 5s cubic-bezier(.16,1,.3,1) infinite alternate; } .ds-hero-content { position: relative; z-index: 1; max-inline-size: 45rem; } .ds-hero h1 { max-inline-size: 15ch; margin: 0 0 1.5rem; font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(2.75rem,1.7rem + 4.2vw,5.75rem); font-weight: 600; line-height: .98; letter-spacing: -.03em; } .ds-hero p { max-inline-size: 52ch; font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); font-size: clamp(1.1rem,1rem + .45vw,1.3rem); line-height: 1.55; } @keyframes ds-pulse { from { clip-path: inset(0 0 72%); opacity: .35; } to { clip-path: inset(0); opacity: .85; } } @media (max-width: 48rem) { .ds-hero { min-block-size: 34rem; } .ds-hero::before { inset-inline-start: 20%; font-size: 11rem; } } @media (prefers-reduced-motion: reduce) { .ds-hero::after { animation: none; clip-path: none; opacity: .55; } } @media (forced-colors: active) { .ds-hero { border: 1px solid CanvasText; } .ds-hero::before { display: none; } }"
+      "description": "The layered blue-to-navy identity field with left-hand copy, expression watermark, particles, and the source vector sequence on the right.",
+      "html": "<section class=\"ds-hero\"><div class=\"ds-hero-content\"><h1>Technical infrastructure, clearly expressed</h1><p>One reusable visual system for product pages and documentation.</p></div><div class=\"ds-hero-animation\" aria-hidden=\"true\"></div></section>",
+      "css": ".ds-hero { position: relative; display: grid; grid-template-columns: minmax(0,1.15fr) minmax(15rem,.85fr); gap: clamp(2rem,6vw,6rem); min-block-size: clamp(31rem, 72dvh, 47rem); align-items: center; overflow: hidden; isolation: isolate; padding: clamp(1.25rem, 5vw, 4.5rem); color: var(--fb-color-white, #fff); background: radial-gradient(circle at 15% 22%, rgba(45,216,163,.13) 0 1px, transparent 2px), radial-gradient(circle at 73% 38%, rgba(255,255,255,.13) 0 1px, transparent 2px), linear-gradient(180deg, var(--fb-color-blue, #0f237c), var(--fb-color-navy, #050d30)); background-size: 7rem 7rem, 10rem 10rem, auto; } .ds-hero::before { position: absolute; inset-inline-start: 45%; inset-block-start: 42%; z-index: -1; content: \":(){ :|:& };:\"; color: rgba(255,255,255,.055); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(8rem, 20vw, 22rem); font-weight: 600; line-height: .7; white-space: nowrap; transform: translate(-22%,-50%); } .ds-hero-animation { inline-size: min(100%,28rem); aspect-ratio: 21/16; justify-self: end; contain: layout style paint; } .ds-hero-content { position: relative; z-index: 1; max-inline-size: 45rem; } .ds-hero h1 { max-inline-size: 15ch; margin: 0 0 1.5rem; font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(2.75rem,1.7rem + 4.2vw,5.75rem); font-weight: 600; line-height: .98; letter-spacing: -.03em; } .ds-hero p { max-inline-size: 52ch; font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); font-size: clamp(1.1rem,1rem + .45vw,1.3rem); line-height: 1.55; } @media (max-width: 48rem) { .ds-hero { min-block-size: 34rem; grid-template-columns: 1fr; } .ds-hero-animation { inline-size: min(20rem,82vw); justify-self: center; } .ds-hero::before { inset-inline-start: 20%; font-size: 11rem; } } @media (forced-colors: active) { .ds-hero { border: 1px solid CanvasText; } .ds-hero::before { display: none; } }"
     },
     {
       "name": "Solid Button",
@@ -526,18 +526,18 @@
     {
       "name": "Expression Footer",
       "kind": "custom",
-      "description": "The royal-blue multi-column closing field with a pale expression beneath legal content.",
+      "description": "The static royal-blue multi-column closing field with a pale expression beneath legal content.",
       "html": "<footer class=\"ds-footer\"><strong>FORKBOMB</strong><div><a href=\"#\">Theme</a><a href=\"#\">Guide</a></div><small>Powered by Forkbomb Vite Theme</small></footer>",
       "css": ".ds-footer { position: relative; display: grid; grid-template-columns: 1.2fr repeat(2,minmax(9rem,.7fr)); gap: clamp(2rem,6vw,6rem); overflow: hidden; padding: clamp(4rem,8vw,7rem) clamp(1.25rem,5vw,4.5rem) 1rem; color: var(--fb-color-white, #fff); background: var(--fb-color-blue, #0f237c); font-family: var(--fb-font-body, \"Public Sans\", Arial, sans-serif); } .ds-footer::after { position: absolute; inset-inline-end: -4%; inset-block-end: -.3em; content: \":(){ :|:& };:\"; color: rgba(255,255,255,.045); font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); font-size: clamp(7rem,21vw,20rem); font-weight: 600; line-height: .7; white-space: nowrap; } .ds-footer > * { position: relative; z-index: 1; } .ds-footer strong { font-family: var(--fb-font-display, \"Barlow Semi Condensed\", \"Arial Narrow\", sans-serif); letter-spacing: .06em; } .ds-footer div { display: grid; align-content: start; } .ds-footer a { color: inherit; text-decoration: none; } .ds-footer a:focus-visible { outline: 2px solid var(--fb-color-mint, #2dd8a3); outline-offset: 4px; } .ds-footer small { grid-column: 1/-1; padding-block-start: 1rem; border-block-start: 1px solid rgba(255,255,255,.15); } @media (max-width: 48rem) { .ds-footer { grid-template-columns: 1fr 1fr; } } @media (max-width: 30rem) { .ds-footer { grid-template-columns: 1fr; } } @media (forced-colors: active) { .ds-footer { border: 1px solid CanvasText; } .ds-footer::after { display: none; } }"
     }
   ],
   "narrative": {
     "northStar": "The Technical Pulse",
-    "overview": "The Forkbomb Vite Theme turns a source-faithful European developer-studio visual language into reusable infrastructure. Dense navy and royal-blue fields establish technical authority; generous white and cloud bands preserve reading comfort; mint appears as a precise pulse for action, focus, selection, and short rules.\n\nThe system is expressive without becoming ornamental. Barlow Semi Condensed provides compressed display energy, Public Sans carries sustained reading, and pale forkbomb expressions become structural watermarks rather than logos pasted onto every surface. Plain Vite pages compose the public `fb-` vocabulary, while VitePress maps the same tokens onto its DefaultTheme without replacing native navigation, search, Markdown, sidebar, or accessibility behavior.",
+    "overview": "The Forkbomb Vite Theme turns a source-faithful European developer-studio visual language into reusable infrastructure. Dense navy and royal-blue fields establish technical authority; generous white and cloud bands preserve reading comfort; mint appears as a precise pulse for action, focus, selection, and short rules.\n\nThe system is expressive without becoming ornamental. Barlow Semi Condensed provides compressed display energy, Public Sans carries sustained reading, and pale forkbomb expressions become structural watermarks rather than logos pasted onto every surface. The source vector sequence beside the hero copy is the single authored animation. Plain Vite pages compose the public `fb-` vocabulary, while VitePress maps the same tokens onto its DefaultTheme without replacing native navigation, search, Markdown, sidebar, or accessibility behavior.",
     "keyCharacteristics": [
       "Alternating deep technical fields and open reading fields",
       "Barlow Semi Condensed display type with Public Sans body copy",
-      "Mint used sparingly as a live signal, never a page fill",
+      "Mint used sparingly as a live signal, including the right-hand hero vector sequence",
       "Square controls, one-pixel rules, and long lateral shadows",
       "Pale forkbomb-expression watermarks embedded into large fields",
       "Shared visual behavior across plain Vite and VitePress"
@@ -596,7 +596,7 @@
     ],
     "dos": [
       "Do alternate navy/blue structural fields with generous white/cloud reading fields.",
-      "Do use mint sparingly for rules, focus, selected state, primary action, selection, and the single slow signal.",
+      "Do use mint sparingly for rules, focus, selected state, primary action, selection, and the single hero vector sequence.",
       "Do preserve square corners, one-pixel borders, and the long lateral shadow.",
       "Do use pale forkbomb expressions as low-alpha structural watermarks on large fields.",
       "Do retain the documented responsive, reduced-motion, focus-visible, and forced-colors behavior.",

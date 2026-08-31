@@ -56,6 +56,25 @@ test('responsive and state styles preserve accessible square controls', () => {
   assert.match(vitepress, /\.VPFeature\.VPFeature/)
 })
 
+test('hero uses the source Lottie animation as its right-hand visual', () => {
+  const html = read('index.html')
+  const components = read('src/theme/components.css')
+  const animation = read('src/theme/hero-animation.js')
+  const vitepress = read('src/vitepress/index.ts')
+  const data = JSON.parse(read('src/assets/forkbomb-animation.json'))
+
+  assert.match(html, /fb-hero__copy[\s\S]+data-fb-hero-animation/)
+  assert.doesNotMatch(html, /fb-footer__animation/)
+  assert.doesNotMatch(components, /\.fb-hero::after/)
+  assert.match(components, /grid-template-columns: minmax\(0, 1\.15fr\)/)
+  assert.match(animation, /IntersectionObserver/)
+  assert.match(animation, /prefers-reduced-motion: reduce/)
+  assert.match(vitepress, /home-hero-image/)
+  assert.equal(data.nm, 'Composizione 4')
+  assert.equal(data.w, 210)
+  assert.equal(data.h, 160)
+})
+
 test('installer preserves existing files unless force is explicit', () => {
   const target = mkdtempSync(join(tmpdir(), 'forkbomb-theme-'))
   const configDir = join(target, '.vitepress')
